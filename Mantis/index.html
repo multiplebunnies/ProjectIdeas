@@ -7,26 +7,32 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aladin|OpenSans"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway|OpenSans"/>
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css"/>
     <link rel="stylesheet" href="css/styles.css"/>
 
     <link rel="icon" type="image/png" href="img/mantis_head.png">
-
     <title>Mantis Place</title>
 </head>
 
 <body>
-<!-- TO FIX: navbar so the clases do not disappear-->
-<nav class="navbar navbar-expand-sm navbar-dark sticky-top">
-    <div class="container">
-        <a class="navbar-brand" href="#"><img src="img/mantis_full.png" alt="mantis place logo" class="responsive" style="max-width:80px;"/></a>
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand d-none d-lg-block" href="#"><img src="img/mantis_full.png" alt="mantis place logo" class="responsive" style="max-width:80px;"/></a>
         <div class="row">
-            <div class="col col-md-4">
+            <div class="col">
                 <h1>Mantis Place</h1>
             </div>
         </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mantisPlaceNav">
+        <div class="row"> <!--ASK: about shopping bag being on right for larger and up viewports-->
+            <div class="col">
+                <a role="button" data-toggle="modal" data-target="#loginModal">
+                    <i class="fa fa-shopping-bag fa-lg text-light"></i>
+                </a>
+            </div>
+        </div>
+        <button class="navbar-toggler order-first align-items-center" type="button" data-toggle="collapse" data-target="#mantisPlaceNav">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="mantisPlaceNav">
@@ -34,23 +40,18 @@
                 <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="videos.html">Videos</a></li>
                 <li class="nav-item"><a class="nav-link" href="caresheets.html">Caresheets</a></li>
-                <li class="nav-item  d-none d-sm-block"><a class="nav-link" href="mantises">Mantises</a></li>
-                <li class="nav-item d-none d-md-block"><a class="nav-link" href="accessories.html">Accessories</a></li>
+                <li class="nav-item"><a class="nav-link" href="mantises">Mantises</a></li>
+                <li class="nav-item"><a class="nav-link" href="accessories.html">Accessories</a></li>
             </ul>
-            <span class="navbar-text ml-auto d-none d-md-block">
-                <a role="button" data-toggle="modal" data-target="#loginModal">
-                    <i class="fa fa-shopping-bag"></i> Cart
-                </a>
-            </span>
         </div>
     </div>
 </nav>
 
-<!--TO FIX: adding the other links to the accordion-->
-<div class="container-nav">
-    <div class="row row-nav">
-        <div class="col col-nav col-5 col-sm-4">
-            <div class="accordion md-accordion" id="accordionEx1" role="tablist" aria-multiselectable="true">
+<div class="container-fluid"><!--ASK: should this be a sidebar navigation accordion panel?-->
+    <div class="row">
+        <div class="d-none d-lg-block sidebar-nav">
+            <div class="accordion" id="accordionEx1" role="tablist" aria-multiselectable="true">
+                
                 <!--card one-->
                 <div class="card">
                     <div class="card-header pb-0" role="tab" id="headingTwo1">
@@ -231,20 +232,29 @@
                     </div>
                 </div>
 
-            </div> <!--accordion end div-->
-         </div>
+            </div> <!--end of accordion-->
+        </div><!--end of sidebar navigation div-->
+
+        <div class="col-12 col-md body-container">
+            Content
+        </div><!--end of body column div-->
+
     </div>
 </div>
 
-
-
-
-
-
-
-    <footer>
- 
-    </footer>
+<footer class="site-footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-center">
+                <a class="btn btn-social-icon btn-lg btn-white btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                <a class="btn btn-social-icon btn-lg btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                <a class="btn btn-social-icon btn-lg btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                <a class="btn btn-social-icon btn-lg btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                <p>copyright 2020</p>
+            </div>
+       </div>
+    </div>
+</footer>
 
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
