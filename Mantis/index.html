@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aladin|OpenSans"/>
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+
+    <link rel="icon" type="image/png" href="img/mantis_head.png">
+
+    <title>Mantis Place</title>
+</head>
+
+<body>
+<!-- TO FIX: navbar so the clases do not disappear-->
+<nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#"><img src="img/mantis_full.png" alt="mantis place logo" class="responsive" style="max-width:80px;"/></a>
+        <div class="row">
+            <div class="col col-md-4">
+                <h1>Mantis Place</h1>
+            </div>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mantisPlaceNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mantisPlaceNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="videos.html">Videos</a></li>
+                <li class="nav-item"><a class="nav-link" href="caresheets.html">Caresheets</a></li>
+                <li class="nav-item  d-none d-sm-block"><a class="nav-link" href="mantises">Mantises</a></li>
+                <li class="nav-item d-none d-md-block"><a class="nav-link" href="accessories.html">Accessories</a></li>
+            </ul>
+            <span class="navbar-text ml-auto d-none d-md-block">
+                <a role="button" data-toggle="modal" data-target="#loginModal">
+                    <i class="fa fa-shopping-bag"></i> Cart
+                </a>
+            </span>
+        </div>
+    </div>
+</nav>
+
+<!--TO FIX: adding the other links to the accordion-->
+<div class="container-nav">
+    <div class="row row-nav">
+        <div class="col col-nav col-5 col-sm-4">
+            <div class="accordion md-accordion" id="accordionEx1" role="tablist" aria-multiselectable="true">
+                <!--card one-->
+                <div class="card">
+                    <div class="card-header pb-0" role="tab" id="headingTwo1">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo1">
+                        <p>
+                            Home
+                        </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!--card two-->
+                <div class="card">
+                    <div class="card-header pb-0" role="tab" id="headingTwo2">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseTwo21" aria-expanded="false" aria-controls="collapseTwo21">
+                        <p>
+                            Videos<i class="fa fa-plus float-right"></i>
+                        </p>
+                        </a>
+                    </div>
+ 
+                    <div id="collapseTwo21" class="collapse" role="tabpanel" aria-labelledby="headingTwo21" data-parent="#accordionEx1">
+                        <div class="card-body">
+                            here
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card three-->
+                <div class="card">
+                    <div class="card-header pb-0" role="tab" id="headingThree3">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
+                        <p>
+                            Care Sheets<i class="fa fa-plus float-right"></i>
+                        </p>
+                        </a>
+                    </div>
+
+                    <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3" data-parent="#accordionEx1">
+                        <div class="card-body">
+                            here
+                        </div>
+                    </div>
+                </div>
+
+                <!--card four-->
+                <div class="card">
+                    <div class="card-header pb-0" role="tab" id="headingFour4">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseFour4" aria-expanded="false" aria-controls="collapseFour4">
+                        <p>
+                            Praying Mantises<i class="fa fa-plus float-right"></i>
+                        </p>
+                        </a>
+                    </div>
+
+                    <div id="collapseFour4" class="collapse" role="tabpanel" aria-labelledby="headingFour4" data-parent="#accordionEx1">
+                        <div class="card-body">
+                            here
+                        </div>
+                    </div>
+                </div>
+
+                <!--card five-->
+                <div class="card">
+                    <div class="card-header pb-0" role="tab" id="headingFive5">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseFive5" aria-expanded="false" aria-controls="collapseFive5">
+                        <p>
+                            Feeder Insects<i class="fa fa-plus float-right"></i>
+                        </p>
+                        </a>
+                    </div>
+ 
+                    <div id="collapseFive5" class="collapse" role="tabpanel" aria-labelledby="headingFive5" data-parent="#accordionEx1">
+                        <div class="card-body">
+                            here
+                        </div>
+                    </div>
+                </div>
+
+                <!--card six-->
+                <div class="card">
+                    <div class="card-header pb-0" role="tab" id="headingSix6">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseSix6" aria-expanded="false" aria-controls="collapseSix6">
+                        <p>
+                            Starter Kits<i class="fa fa-plus float-right"></i>
+                        </p>
+                        </a>
+                    </div>
+ 
+                    <div id="collapseSix6" class="collapse" role="tabpanel" aria-labelledby="headingSix6" data-parent="#accordionEx1">
+                        <div class="card-body">
+                            here
+                        </div>
+                    </div>
+                </div>
+
+                <!--card seven-->
+                <div class="card">
+                    <div class="card-header pb-0" role="tab" id="headingSeven7">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseSeven7" aria-expanded="false" aria-controls="collapseSeven7">
+                        <p>
+                            Accessories<i class="fa fa-plus float-right"></i>
+                        </p>
+                        </a>
+                    </div>
+ 
+                    <div id="collapseSeven7" class="collapse" role="tabpanel" aria-labelledby="headingSeven7" data-parent="#accordionEx1">
+                        <div class="card-body">
+                            here
+                        </div>
+                    </div>
+                </div>
+
+                <!--card eight-->
+                <div class="card">
+                    <div class="card-header pb-0" role="tab" id="headingEight8">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseEight8" aria-expanded="false" aria-controls="collapsEight8">
+                        <p>
+                            Gift Shop<i class="fa fa-plus float-right"></i>
+                        </p>
+                        </a>
+                    </div>
+ 
+                    <div id="collapseEight8" class="collapse" role="tabpanel" aria-labelledby="headingEight8" data-parent="#accordionEx1">
+                        <div class="card-body">
+                            here
+                        </div>
+                    </div>
+                </div>
+
+                <!--card nine-->
+                <div class="card">
+                    <div class="card-header pb-0" role="tab" id="headingNine9">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseNine9" aria-expanded="false" aria-controls="collapseNine9">
+                        <p>
+                            Shipping Supplies<i class="fa fa-plus float-right"></i>
+                        </p>
+                        </a>
+                    </div>
+ 
+                    <div id="collapseNine9" class="collapse" role="tabpanel" aria-labelledby="headingNine9" data-parent="#accordionEx1">
+                        <div class="card-body">
+                            here
+                        </div>
+                    </div>
+                </div>
+
+                <!--card ten-->
+                <div class="card">
+                    <div class="card-header pb-0" role="tab" id="headingTen10">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseTen10" aria-expanded="false" aria-controls="collapseTen10">
+                        <p>
+                            Spiders
+                        </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!--card eleven-->
+                <div class="card">
+                    <div class="card-header pb-0" role="tab" id="headingEleven11">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseEleven11" aria-expanded="false" aria-controls="collapseEleven11">
+                        <p>
+                            Contact Us
+                        </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!--card twelve-->
+                <div class="card">
+                    <div class="card-header pb-0" role="tab" id="headingTwelve12">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseTwelve12" aria-expanded="false" aria-controls="collapseTwelve12">
+                        <p>
+                            Shipping/Site Policy
+                        </p>
+                        </a>
+                    </div>
+                </div>
+
+            </div> <!--accordion end div-->
+         </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+    <footer>
+ 
+    </footer>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

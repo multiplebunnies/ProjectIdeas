@@ -1,0 +1,49 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+    font-family: 'Aladin', sans-serif;
+}
+
+.navbar-dark{
+    background-color:#59916d;
+}
+
+/*add space after website logo*/
+.navbar-nav{
+    padding:40px;
+}
+
+/*remove default container, row, and col margins*/
+.container-nav{
+    margin:0;
+}
+.row-nav{
+    padding:0;
+    margin:0;
+}
+
+.col-nav{
+    padding:0;
+    margin:0;
+}
+
+/*change card header styles*/
+.card-header a:hover{
+    text-decoration:none;
+}
+h5{
+    color:red;
+    size:10px;
+}
+.card-header{
+    background-color: #f9f9f9;
+    height:43px;
+}
+
+.card-header a {
+    color: #202020;
+  }
+
+/*change card widths so all fit on same page*/
