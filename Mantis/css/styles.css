@@ -2,7 +2,8 @@
 body {
     font-family: "Open Sans", sans-serif;
 }
-footer {
+
+footer, .nav-item {
     font-family: "Raleway", sans-serif;
 }
 
@@ -33,6 +34,19 @@ h1 {
     color: #202020;
 }
 
+.fa-plus {
+    color: gray;
+}
+
+/*messing with buttons in sidebar nav----------------------*/
+.btn:focus {
+    box-shadow: none;
+}
+.btn-outline-dark{
+    border: none;
+    padding-left: 20px;
+}
+
 /*give width to sidebar nav--------------------------------*/
 .sidebar-nav{
     width: 300px;
@@ -42,6 +56,11 @@ h1 {
 .site-footer{
     background-color:#59916d;
     min-height: 150px;
+    color: white;
+}
+
+.footer-text p{
+    margin: 0;
 }
 
 /*turn social icons white*/
