@@ -1,4 +1,4 @@
-/*general website formatting-----------------------------*/
+/*general website formatting----------------------------------------------*/
 body {
     font-family: "Open Sans", sans-serif;
 }
@@ -15,12 +15,33 @@ h1 {
     background-color:#59916d;
 }
 
-/*add space after website logo-----------------------------*/
+
+/*NAVBAR (top) custom styles-------------------------------------------------*/
+/*add space after website logo*/
 .navbar-nav{
     padding:40px;
 }
 
-/*change card header styles--------------------------------*/
+/*CUSTOM page containers + id's------------------------------------------------*/
+/*give fixed width to sidebar nav*/
+.sidebar-container{
+    width: 300px;
+}
+
+/*body container to give min height*/
+.body-container{
+    min-height: 500px;
+    padding: 15px;
+}
+
+.site-footer{
+    background-color:#59916d;
+    min-height: 150px;
+    color: white;
+}
+
+/*SIDEBAR container and cards styling--------------------------------------*/
+/*change card header and body styles*/
 .card-header a:hover{
     text-decoration:none;
 }
@@ -34,11 +55,15 @@ h1 {
     color: #202020;
 }
 
+.card-body{
+    padding:0;
+}
+
 .fa-plus {
     color: gray;
 }
 
-/*messing with buttons in sidebar nav----------------------*/
+/*reformat the buttons in sidebar nav*/
 .btn:focus {
     box-shadow: none;
 }
@@ -47,28 +72,11 @@ h1 {
     padding-left: 20px;
 }
 
-/*give width to sidebar nav--------------------------------*/
-.sidebar-nav{
-    width: 300px;
-}
-
-/*site footer background------------------------------------*/
-.site-footer{
-    background-color:#59916d;
-    min-height: 150px;
-    color: white;
-}
-
+/*FOOTER reformat of text items and background---------------------------------*/
 .footer-text p{
     margin: 0;
 }
 
-/*turn social icons white*/
 .btn-social-icon{
     color: white;
-}
-
-/*body container to give min height-----------------------------*/
-.body-container{
-    min-height: 500px;
 }

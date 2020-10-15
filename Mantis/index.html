@@ -17,21 +17,21 @@
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-    <div class="container-fluid">
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">                    <!--NOTE: on lg and smaller, the toggler appears-->
+    <div class="container-fluid">                                               <!--NOTE: fill the width of the entire page-->
         <a class="navbar-brand d-none d-lg-block" href="#"><img src="img/mantis_full.png" alt="mantis place logo" class="responsive" style="max-width:80px;"/></a>
-        <div class="row">
+        <div class="row">                                                       <!--NOTE: above, the d-none d-lg-block gets rid of the logo on lg and smaller viewports -->
             <div class="col">
                 <h1>Mantis Place</h1>
             </div>
         </div>
-        <div class="row"> <!--ASK: about shopping bag being on right for larger and up viewports-->
+        <div class="row">       <!--ASK: about shopping bag being on right for larger and up viewports?-->
             <div class="col">
-                <a role="button" data-toggle="modal" data-target="#loginModal">
+                <a role="button" data-toggle="modal" data-target="#loginModal"> <!--NOTE: eventually want the icon to pop up with items in bag-->
                     <i class="fa fa-shopping-bag fa-lg text-light"></i>
                 </a>
             </div>
-        </div>
+        </div>                                                                  <!--NOTE: below, order first makes toggler appear on the left rather than default right-->
         <button class="navbar-toggler order-first align-items-center" type="button" data-toggle="collapse" data-target="#mantisPlaceNav">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -47,15 +47,15 @@
     </div>
 </nav>
 
-<div class="container-fluid"><!--ASK: should this be a sidebar navigation accordion panel?-->
-    <div class="row">
-        <div class="d-none d-lg-block sidebar-nav">
+<div class="container-fluid">   <!--ASK: should this be a sidebar navigation accordion panel?-->
+    <div class="row">                                                           <!--CUSTOM CLASS: sidebar-container-->
+        <div class="d-none d-lg-block sidebar-container">                       <!--NOTE: make sidebar disappear at lg and smaller viewports-->
             <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
                 
                 <!--card one-->
                 <div class="card">
-                    <div class="card-header pb-0" role="tab" id="headingTwo1">
-                        <a class="collapsed" data-toggle="collapse" href="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo1">
+                    <div class="card-header" role="tab" id="headingOne1">
+                        <a class="collapsed" data-toggle="collapse" href="#collapseOne1" aria-expanded="false" aria-controls="collapseOne1">
                         <p>
                             Home
                         </p>
@@ -65,7 +65,7 @@
 
                 <!--card two-->
                 <div class="card">
-                    <div class="card-header pb-0" role="tab" id="headingTwo2">
+                    <div class="card-header" role="tab" id="headingTwo2">
                         <a class="collapsed" data-toggle="collapse" href="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
                         <p>
                             Videos
@@ -76,7 +76,7 @@
 
                 <!-- card three-->
                 <div class="card">
-                    <div class="card-header pb-0" role="tab" id="headingThree3">
+                    <div class="card-header" role="tab" id="headingThree3">
                         <a class="collapsed" data-toggle="collapse" href="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
                         <p>
                             Care Sheets<i class="fa fa-angle-down float-right"></i>
@@ -84,11 +84,13 @@
                         
                         </a>
                     </div>
-
-                    <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3">
-                        <div class="body-of-card">
-                            <div class="btn-group-vertical" role="group" aria-label="Basic example" style="width:100%">
-                                <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none border-style-none rounded-0">Praying Mantis</button>
+                                <!--ASK: how to make down carrot change to up carrot when opened; then down carrot when clicked closed (js?)-->
+                    <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="CareSheetDropdown">
+                        <div class="card-body">
+                            <div class="btn-group-vertical" role="group" aria-label="CareSheetDropdown" style="width:100%">
+                                <!--NOTE: d-flex and align-items-start pushes them to the left; shadow-none removes shadow outline upon clicking-->
+                                <!--NOTE: rounded-0 makes rounded button corners sharp-->
+                                <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Praying Mantis</button>
                                 <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Ootheca and Nymphs</button>
                                 <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Feeder Insects</button>
                                 <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Live Plants</button>
@@ -99,7 +101,7 @@
 
                 <!--card four-->
                 <div class="card">
-                    <div class="card-header pb-0" role="tab" id="headingFour4">
+                    <div class="card-header" role="tab" id="headingFour4">
                         <a class="collapsed" data-toggle="collapse" href="#collapseFour4" aria-expanded="false" aria-controls="collapseFour4">
                         <p>
                             Praying Mantises<i class="fa fa-angle-down float-right"></i>
@@ -107,9 +109,9 @@
                         </a>
                     </div>
 
-                    <div id="collapseFour4" class="collapse" role="tabpanel" aria-labelledby="headingFour4">
-                        <div class="body-of-card">
-                            <div class="btn-group-vertical" role="group" aria-label="Basic example" style="width:100%">
+                    <div id="collapseFour4" class="collapse" role="tabpanel" aria-labelledby="PrayingMantisesDropdown">
+                        <div class="card-body">
+                            <div class="btn-group-vertical" role="group" aria-label="PrayingMantisesDropdown" style="width:100%">
                                 <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Live Mantises</button>
                                 <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Live Ootheca</button>
                                 <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Dried Ootheca</button>
@@ -121,7 +123,7 @@
 
                 <!--card five-->
                 <div class="card">
-                    <div class="card-header pb-0" role="tab" id="headingFive5">
+                    <div class="card-header" role="tab" id="headingFive5">
                         <a class="collapsed" data-toggle="collapse" href="#collapseFive5" aria-expanded="false" aria-controls="collapseFive5">
                         <p>
                             Feeder Insects<i class="fa fa-angle-down float-right"></i>
@@ -129,9 +131,9 @@
                         </a>
                     </div>
  
-                    <div id="collapseFive5" class="collapse" role="tabpanel" aria-labelledby="headingFive5">
-                        <div class="body-of-card">
-                            <div class="btn-group-vertical" role="group" aria-label="Basic example" style="width:100%">
+                    <div id="collapseFive5" class="collapse" role="tabpanel" aria-labelledby="FeederInsectsDropdown">
+                        <div class="card-body">
+                            <div class="btn-group-vertical" role="group" aria-label="FeederInsectsDropdown" style="width:100%">
                                 <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Fruit Flies</button>
                                 <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Bottle Flies</button>
                                 <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Springtails</button>
@@ -144,7 +146,7 @@
 
                 <!--card six-->
                 <div class="card">
-                    <div class="card-header pb-0" role="tab" id="headingSix6">
+                    <div class="card-header" role="tab" id="headingSix6">
                         <a class="collapsed" data-toggle="collapse" href="#collapseSix6" aria-expanded="false" aria-controls="collapseSix6">
                         <p>
                             Starter Kits<i class="fa fa-angle-down float-right"></i>
@@ -152,9 +154,9 @@
                         </a>
                     </div>
  
-                    <div id="collapseSix6" class="collapse" role="tabpanel" aria-labelledby="headingSix6">
-                        <div class="body-of-card">
-                            <div class="btn-group-vertical" role="group" aria-label="Basic example" style="width:100%">
+                    <div id="collapseSix6" class="collapse" role="tabpanel" aria-labelledby="StarterKitsDropdown">
+                        <div class="card-body">
+                            <div class="btn-group-vertical" role="group" aria-label="StarterKitsDropdown" style="width:100%">
                                 <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Small School Starter</button>
                                 <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Medium School Starter</button>
                                 <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Large School Starter</button>
@@ -165,7 +167,7 @@
 
                 <!--card seven-->
                 <div class="card">
-                    <div class="card-header pb-0" role="tab" id="headingSeven7">
+                    <div class="card-header" role="tab" id="headingSeven7">
                         <a class="collapsed" data-toggle="collapse" href="#collapseSeven7" aria-expanded="false" aria-controls="collapseSeven7">
                         <p>
                             Accessories<i class="fa fa-angle-down float-right"></i>
@@ -173,9 +175,9 @@
                         </a>
                     </div>
                     <!-- TO DO: card within a card-->
-                    <div id="collapseSeven7" class="collapse" role="tabpanel" aria-labelledby="headingSeven7">
-                        <div class="body-of-card">
-                            <div class="btn-group-vertical" role="group" aria-label="Basic example" style="width:100%">
+                    <div id="collapseSeven7" class="collapse" role="tabpanel" aria-labelledby="AccessoriesDropdown">
+                        <div class="card-body">
+                            <div class="btn-group-vertical" role="group" aria-label="AccessoriesDropdown" style="width:100%">
                                 <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Habitat</button>
                                 <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Tools</button>
                               </div>
@@ -185,7 +187,7 @@
 
                 <!--card eight-->
                 <div class="card">
-                    <div class="card-header pb-0" role="tab" id="headingEight8">
+                    <div class="card-header" role="tab" id="headingEight8">
                         <a class="collapsed" data-toggle="collapse" href="#collapseEight8" aria-expanded="false" aria-controls="collapsEight8">
                         <p>
                             Gift Shop<i class="fa fa-angle-down float-right"></i>
@@ -193,9 +195,9 @@
                         </a>
                     </div>
  
-                    <div id="collapseEight8" class="collapse" role="tabpanel" aria-labelledby="headingEight8">
-                        <div class="body-of-card">
-                            <div class="btn-group-vertical" role="group" aria-label="Basic example" style="width:100%">
+                    <div id="collapseEight8" class="collapse" role="tabpanel" aria-labelledby="GiftShopDropdown">
+                        <div class="card-body">
+                            <div class="btn-group-vertical" role="group" aria-label="GiftShopDropdown" style="width:100%">
                                 <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Jewelry</button>
                                 <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Decals</button>
                                 <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Patches</button>
@@ -208,7 +210,7 @@
 
                 <!--card nine-->
                 <div class="card">
-                    <div class="card-header pb-0" role="tab" id="headingNine9">
+                    <div class="card-header" role="tab" id="headingNine9">
                         <a class="collapsed" data-toggle="collapse" href="#collapseNine9" aria-expanded="false" aria-controls="collapseNine9">
                         <p>
                             Shipping Supplies<i class="fa fa-angle-down float-right"></i>
@@ -216,9 +218,9 @@
                         </a>
                     </div>
  
-                    <div id="collapseNine9" class="collapse" role="tabpanel" aria-labelledby="headingNine9">
-                        <div class="body-of-card">
-                            <div class="btn-group-vertical" role="group" aria-label="Basic example" style="width:100%">
+                    <div id="collapseNine9" class="collapse" role="tabpanel" aria-labelledby="ShippingSuppliesDropdown">
+                        <div class="card-body">
+                            <div class="btn-group-vertical" role="group" aria-label="ShippingSuppliesDropdown" style="width:100%">
                                 <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Boxes</button>
                                 <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Heating Packs</button>
                                 <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Tape</button>
@@ -229,7 +231,7 @@
 
                 <!--card ten-->
                 <div class="card">
-                    <div class="card-header pb-0" role="tab" id="headingTen10">
+                    <div class="card-header" role="tab" id="headingTen10">
                         <a class="collapsed" data-toggle="collapse" href="#collapseTen10" aria-expanded="false" aria-controls="collapseTen10">
                         <p>
                             Spiders
@@ -240,7 +242,7 @@
 
                 <!--card eleven-->
                 <div class="card">
-                    <div class="card-header pb-0" role="tab" id="headingEleven11">
+                    <div class="card-header" role="tab" id="headingEleven11">
                         <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven11" aria-expanded="false" aria-controls="collapseEleven11">
                         <p>
                             Contact Us
@@ -251,7 +253,7 @@
 
                 <!--card twelve-->
                 <div class="card">
-                    <div class="card-header pb-0" role="tab" id="headingTwelve12">
+                    <div class="card-header" role="tab" id="headingTwelve12">
                         <a class="collapsed" data-toggle="collapse" href="#collapseTwelve12" aria-expanded="false" aria-controls="collapseTwelve12">
                         <p>
                             Shipping/Site Policy
@@ -281,8 +283,8 @@
                 
                 <div class="col footer-text">
                     <p><small>copyright &#169; 2020</small></p>
-                    <p><small>all rights reserved</small></p>
-                    <p><small>mantisplace.com</small></p>
+                    <p><small>all rights reserved</small></p>               <!--TODO: will eventually change hover colors, etc.-->
+                    <a href="mantisplace.com" id="footer-link"><small>mantisplace.com</small></a>
                 </div>
             </div>
        </div>
