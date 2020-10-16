@@ -15,7 +15,15 @@ h1 {
     background-color:#59916d;
 }
 
+/*HEADER custom styles------------------------------------------------------*/
+a.website-name {
+    color:#2f2f2f;
+}
 
+.website-name:hover{
+    text-decoration: none;
+    color: white;
+}
 /*NAVBAR (top) custom styles-------------------------------------------------*/
 /*add space after website logo*/
 .navbar-nav{
