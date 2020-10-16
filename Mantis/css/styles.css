@@ -1,4 +1,4 @@
-/*general website formatting----------------------------------------------*/
+/*general website formatting------------------------------------------------------------------*/
 body {
     font-family: "Open Sans", sans-serif;
 }
@@ -15,7 +15,7 @@ h1 {
     background-color:#59916d;
 }
 
-/*HEADER custom styles------------------------------------------------------*/
+/*HEADER custom styles-------------------------------------------------------------------------*/
 a.website-name {
     color:#2f2f2f;
 }
@@ -24,20 +24,20 @@ a.website-name {
     text-decoration: none;
     color: white;
 }
-/*NAVBAR (top) custom styles-------------------------------------------------*/
-/*add space after website logo*/
-.navbar-nav{
+
+/*NAVBAR (top) custom styles--------------------------------------------------------------------*/
+.navbar-nav{                /*add space after website logo*/
     padding:40px;
 }
 
-/*CUSTOM page containers + id's------------------------------------------------*/
-/*give fixed width to sidebar nav*/
-.sidebar-container{
+/*CUSTOM page containers + id's-----------------------------------------------------------------*/
+.sidebar-container{         /*fixed width to sidebar; min height associated w/ body height*/
     width: 300px;
+    height: 500px;
+    overflow-y: auto;
 }
 
-/*body container to give min height*/
-.body-container{
+.body-container{            /*body container to give min height*/
     min-height: 500px;
     padding: 15px;
 }
@@ -48,18 +48,25 @@ a.website-name {
     color: white;
 }
 
-/*SIDEBAR container and cards styling--------------------------------------*/
-/*change card header and body styles*/
-.card-header a:hover{
+/*SIDEBAR CUSTOM container and cards styling-----------------------------------------------------*/
+.card-container a:hover, .card-header a:hover{    /*change card header and body styles*/
     text-decoration:none;
 }
 
-.card-header{
-    background-color: #f9f9f9;
-    height:43px;
+.card-header a {
+    color: #2f2f2f;
 }
 
-.card-header a {
+.card-header{
+    height: 41.5px;
+}
+
+.card-container{
+    background-color: #f9f9f9;
+    height:40px;
+}
+
+.card-container a {
     color: #202020;
 }
 
@@ -71,8 +78,7 @@ a.website-name {
     color: gray;
 }
 
-/*reformat the buttons in sidebar nav*/
-.btn:focus {
+.btn:focus {            /*reformat the buttons in sidebar nav*/
     box-shadow: none;
 }
 .btn-outline-dark{
@@ -80,7 +86,7 @@ a.website-name {
     padding-left: 20px;
 }
 
-/*FOOTER reformat of text items and background---------------------------------*/
+/*FOOTER reformat of text items and background----------------------------------------------------*/
 .footer-text p{
     margin: 0;
 }
