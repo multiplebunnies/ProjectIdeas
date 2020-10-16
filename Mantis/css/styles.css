@@ -48,6 +48,15 @@ a.website-name {
     color: white;
 }
 
+/*CUSTOM MEDIA QUERY for shopping bag ----------------------------------------------------------*/
+@media only screen and (min-width: 992px){
+    .shopping-bag {
+        position: absolute;
+        top: 50px;
+        right:30px;
+    }
+}
+
 /*SIDEBAR CUSTOM container and cards styling-----------------------------------------------------*/
 .card-container a:hover, .card-header a:hover{    /*change card header and body styles*/
     text-decoration:none;
