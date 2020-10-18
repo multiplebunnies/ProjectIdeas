@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aladin|OpenSans"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway|OpenSans"/>
@@ -56,7 +57,7 @@
             <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
                 
                 <!--card one-->
-                <div class="card">                                              <!--CUSTOM CLASS: card container-->
+                <div class="card rounded-0">                                              <!--CUSTOM CLASS: card container-->
                     <div class="card-text card-container" role="tab" id="headingOne1">
                         <a class="collapsed" data-toggle="collapse" href="#collapseOne1" aria-expanded="false" aria-controls="collapseOne1">
                             <div class="btn-group-vertical" role="group" aria-label="collapseOne1" style="width:100%; height:100%;">
@@ -88,15 +89,11 @@
                     </div>
                 </div>
 
-
                 <!-- card three-->
                 <div class="card">
                     <div class="card-header" role="tab" id="headingThree3">
-                        <a class="collapsed" data-toggle="collapse" href="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
-                        <p>
+                        <a class="collapsed link-list" data-toggle="collapse" href="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
                             Care Sheets<i class="fa fa-angle-down float-right"></i>
-                        </p>
-                        
                         </a>
                     </div>
                                 <!--ASK: how to make down carrot change to up carrot when opened; then down carrot when clicked closed (js?)-->
@@ -118,9 +115,7 @@
                 <div class="card">
                     <div class="card-header" role="tab" id="headingFour4">
                         <a class="collapsed" data-toggle="collapse" href="#collapseFour4" aria-expanded="false" aria-controls="collapseFour4">
-                        <p>
                             Praying Mantises<i class="fa fa-angle-down float-right"></i>
-                        </p>
                         </a>
                     </div>
 
@@ -140,9 +135,7 @@
                 <div class="card">
                     <div class="card-header" role="tab" id="headingFive5">
                         <a class="collapsed" data-toggle="collapse" href="#collapseFive5" aria-expanded="false" aria-controls="collapseFive5">
-                        <p>
                             Feeder Insects<i class="fa fa-angle-down float-right"></i>
-                        </p>
                         </a>
                     </div>
  
@@ -163,9 +156,7 @@
                 <div class="card">
                     <div class="card-header" role="tab" id="headingSix6">
                         <a class="collapsed" data-toggle="collapse" href="#collapseSix6" aria-expanded="false" aria-controls="collapseSix6">
-                        <p>
                             Starter Kits<i class="fa fa-angle-down float-right"></i>
-                        </p>
                         </a>
                     </div>
  
@@ -184,9 +175,7 @@
                 <div class="card">
                     <div class="card-header" role="tab" id="headingSeven7">
                         <a class="collapsed" data-toggle="collapse" href="#collapseSeven7" aria-expanded="false" aria-controls="collapseSeven7">
-                        <p>
                             Accessories<i class="fa fa-angle-down float-right"></i>
-                        </p>
                         </a>
                     </div>
                     <!-- TO DO: card within a card-->
@@ -204,9 +193,7 @@
                 <div class="card">
                     <div class="card-header" role="tab" id="headingEight8">
                         <a class="collapsed" data-toggle="collapse" href="#collapseEight8" aria-expanded="false" aria-controls="collapsEight8">
-                        <p>
                             Gift Shop<i class="fa fa-angle-down float-right"></i>
-                        </p>
                         </a>
                     </div>
  
@@ -227,9 +214,7 @@
                 <div class="card">
                     <div class="card-header" role="tab" id="headingNine9">
                         <a class="collapsed" data-toggle="collapse" href="#collapseNine9" aria-expanded="false" aria-controls="collapseNine9">
-                        <p>
                             Shipping Supplies<i class="fa fa-angle-down float-right"></i>
-                        </p>
                         </a>
                     </div>
  
@@ -267,7 +252,7 @@
                 </div>
 
                 <!--card twelve-->
-                <div class="card">
+                <div class="card rounded-0">
                     <div class="card-text card-container" role="tab" id="headingTwelve12">
                         <a class="collapsed" data-toggle="collapse" href="#collapseTwelve12" aria-expanded="false" aria-controls="collapseTwelve12">
                             <div class="btn-group-vertical" role="group" aria-label="collapseTwelve12" style="width:100%; height:100%;">
@@ -307,12 +292,11 @@
                 </div>
               </div>
         </div><!--end of body column div-->
-
     </div>
 </div>
 
-<footer class="site-footer d-flex flex-column justify-content-center">
-    <div class="container-fluid">
+<footer class="site-footer d-flex align-items-end">
+    <div class="container-fluid mb-2">
         <div class="row">
             <div class="col text-center">
                 <a class="btn btn-social-icon btn-lg btn-white btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
