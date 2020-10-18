@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aladin|OpenSans"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway|OpenSans"/>
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+
+    <link rel="icon" type="image/png" href="img/mantis_head.png">
+    <title>Mantis Place</title>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">                    <!--NOTE: on lg and smaller, the toggler appears-->
+    <div class="container-fluid">                                               <!--NOTE: fill the width of the entire page-->
+        <a class="navbar-brand d-none d-lg-block" href="#"><img src="img/mantis_full.png" alt="mantis place logo" style="max-width:80px;"/></a>
+        <a class="website-name" href="#"><h1>Mantis Place</h1></a>              <!--CUSTOM CLASS: website-name, and shopping-bag-->
+        
+        <div class="shopping-bag" role="button" data-toggle="modal" data-target="#shoppingModal">
+            <i class="fa fa-shopping-bag fa-lg text-light"></i>
+        </div>
+
+        <button class="navbar-toggler order-first align-items-center" type="button" data-toggle="collapse" data-target="#mantisPlaceNav">
+            <span class="navbar-toggler-icon"></span>                           <!--NOTE: above, order first makes toggler appear on the left rather than default right-->
+        </button>
+        
+        <div class="collapse navbar-collapse" id="mantisPlaceNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item d-lg-none"><a class="nav-link" href="videos.html">Videos</a></li>
+                <li class="nav-item"><a class="nav-link" href="newarrivals.html">New Arrivals</a></li>
+                <li class="nav-item d-lg-none"><a class="nav-link" href="caresheets.html">Care Sheets</a></li>
+                <li class="nav-item"><a class="nav-link" href="mantises.html">Mantises</a></li>
+                <li class="nav-item d-lg-none"><a class="nav-link" href="spiders.html">Spiders</a></li>
+                <li class="nav-item d-lg-none"><a class="nav-link" href="feederinsects.html">Feeder Insects</a></li>
+                <li class="nav-item d-lg-none"><a class="nav-link" href="starterkits.html">Starter Kits</a></li>
+                <li class="nav-item"><a class="nav-link" href="accessories.html">Accessories</a></li>
+                <li class="nav-item"><a class="nav-link" href="giftshop.html">Gift Shop</a></li>
+                <li class="nav-item d-lg-none"><a class="nav-link" href="shippingsupplies.html">Shipping Supplies</a></li>
+                <li class="nav-item d-lg-none"><a class="nav-link" href="contactus.html">Contact Us</a></li>
+                <li class="nav-item d-lg-none"><a class="nav-link" href="shipsitepolicy.html">Shipping and Site Policy</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">                                                           <!--CUSTOM CLASS: sidebar-container-->
+        <div class="d-none d-lg-block sidebar-container">                       <!--NOTE: make sidebar disappear at lg and smaller viewports-->
+            <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
+                
+                <!--card one-->
+                <div class="card rounded-0">                                              <!--CUSTOM CLASS: card container-->
+                    <div class="card-text card-container" role="tab" id="headingOne1">
+                        <a class="collapsed" data-toggle="collapse" href="#collapseOne1" aria-expanded="false" aria-controls="collapseOne1">
+                            <div class="btn-group-vertical" role="group" aria-label="collapseOne1" style="width:100%; height:100%;">
+                                <button type="button" class="btn btn-outline-dark d-flex align-items-center shadow-none rounded-0">Home</button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!--card two-->
+                <div class="card">
+                    <div class="card-text card-container" role="tab" id="headingTwo2">
+                        <a class="collapsed" data-toggle="collapse" href="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+                            <div class="btn-group-vertical" role="group" aria-label="collapseOne2" style="width:100%; height:100%;">
+                                <button type="button" class="btn btn-outline-dark d-flex align-items-center shadow-none rounded-0">Videos</button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!--card two and a half-->
+                <div class="card">
+                    <div class="card-text card-container" role="tab" id="headingTwoHalf2">
+                        <a class="collapsed" data-toggle="collapse" href="#collapseTwoHalf2" aria-expanded="false" aria-controls="collapseTwoHalf2">
+                            <div class="btn-group-vertical" role="group" aria-label="collapseOne2" style="width:100%; height:100%;">
+                                <button type="button" class="btn btn-outline-dark d-flex align-items-center shadow-none rounded-0">New Arrivals</button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- card three-->
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingThree3">
+                        <a class="collapsed link-list" data-toggle="collapse" href="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
+                            Care Sheets<i class="fa fa-angle-down float-right"></i>
+                        </a>
+                    </div>
+                                <!--ASK: how to make down carrot change to up carrot when opened; then down carrot when clicked closed (js?)-->
+                    <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="CareSheetDropdown">
+                        <div class="card-body">
+                            <div class="btn-group-vertical" role="group" aria-label="CareSheetDropdown" style="width:100%">
+                                <!--NOTE: d-flex and align-items-start pushes them to the left; shadow-none removes shadow outline upon clicking-->
+                                <!--NOTE: rounded-0 makes rounded button corners sharp-->
+                                <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Praying Mantis</button>
+                                <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Ootheca and Nymphs</button>
+                                <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Feeder Insects</button>
+                                <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Live Plants</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--card four-->
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingFour4">
+                        <a class="collapsed" data-toggle="collapse" href="#collapseFour4" aria-expanded="false" aria-controls="collapseFour4">
+                            Praying Mantises<i class="fa fa-angle-down float-right"></i>
+                        </a>
+                    </div>
+
+                    <div id="collapseFour4" class="collapse" role="tabpanel" aria-labelledby="PrayingMantisesDropdown">
+                        <div class="card-body">
+                            <div class="btn-group-vertical" role="group" aria-label="PrayingMantisesDropdown" style="width:100%">
+                                <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Live Mantises</button>
+                                <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Live Ootheca</button>
+                                <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Dried Ootheca</button>
+                                <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Dried Mantises</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--card five-->
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingFive5">
+                        <a class="collapsed" data-toggle="collapse" href="#collapseFive5" aria-expanded="false" aria-controls="collapseFive5">
+                            Feeder Insects<i class="fa fa-angle-down float-right"></i>
+                        </a>
+                    </div>
+ 
+                    <div id="collapseFive5" class="collapse" role="tabpanel" aria-labelledby="FeederInsectsDropdown">
+                        <div class="card-body">
+                            <div class="btn-group-vertical" role="group" aria-label="FeederInsectsDropdown" style="width:100%">
+                                <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Fruit Flies</button>
+                                <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Bottle Flies</button>
+                                <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Springtails</button>
+                                <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Mealworms</button>
+                                <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Waxworms</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--card six-->
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingSix6">
+                        <a class="collapsed" data-toggle="collapse" href="#collapseSix6" aria-expanded="false" aria-controls="collapseSix6">
+                            Starter Kits<i class="fa fa-angle-down float-right"></i>
+                        </a>
+                    </div>
+ 
+                    <div id="collapseSix6" class="collapse" role="tabpanel" aria-labelledby="StarterKitsDropdown">
+                        <div class="card-body">
+                            <div class="btn-group-vertical" role="group" aria-label="StarterKitsDropdown" style="width:100%">
+                                <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Small School Starter</button>
+                                <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Medium School Starter</button>
+                                <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Large School Starter</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--card seven-->
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingSeven7">
+                        <a class="collapsed" data-toggle="collapse" href="#collapseSeven7" aria-expanded="false" aria-controls="collapseSeven7">
+                            Accessories<i class="fa fa-angle-down float-right"></i>
+                        </a>
+                    </div>
+                    <!-- TO DO: card within a card-->
+                    <div id="collapseSeven7" class="collapse" role="tabpanel" aria-labelledby="AccessoriesDropdown">
+                        <div class="card-body">
+                            <div class="btn-group-vertical" role="group" aria-label="AccessoriesDropdown" style="width:100%">
+                                <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Habitat</button>
+                                <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Tools</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--card eight-->
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingEight8">
+                        <a class="collapsed" data-toggle="collapse" href="#collapseEight8" aria-expanded="false" aria-controls="collapsEight8">
+                            Gift Shop<i class="fa fa-angle-down float-right"></i>
+                        </a>
+                    </div>
+ 
+                    <div id="collapseEight8" class="collapse" role="tabpanel" aria-labelledby="GiftShopDropdown">
+                        <div class="card-body">
+                            <div class="btn-group-vertical" role="group" aria-label="GiftShopDropdown" style="width:100%">
+                                <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Jewelry</button>
+                                <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Decals</button>
+                                <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Patches</button>
+                                <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Puzzles</button>
+                                <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Bookes</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--card nine-->
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingNine9">
+                        <a class="collapsed" data-toggle="collapse" href="#collapseNine9" aria-expanded="false" aria-controls="collapseNine9">
+                            Shipping Supplies<i class="fa fa-angle-down float-right"></i>
+                        </a>
+                    </div>
+ 
+                    <div id="collapseNine9" class="collapse" role="tabpanel" aria-labelledby="ShippingSuppliesDropdown">
+                        <div class="card-body">
+                            <div class="btn-group-vertical" role="group" aria-label="ShippingSuppliesDropdown" style="width:100%">
+                                <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Boxes</button>
+                                <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Heating Packs</button>
+                                <button type="button" class="btn btn-outline-dark d-flex align-items-start shadow-none rounded-0">Tape</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--card ten-->
+                <div class="card">
+                    <div class="card-text card-container" role="tab" id="headingTen10">
+                        <a class="collapsed" data-toggle="collapse" href="#collapseTen10" aria-expanded="false" aria-controls="collapseTen10">
+                            <div class="btn-group-vertical" role="group" aria-label="collapseTen10" style="width:100%; height:100%;">
+                                <button type="button" class="btn btn-outline-dark d-flex align-items-center shadow-none rounded-0">Spiders</button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!--card eleven-->
+                <div class="card">
+                    <div class="card-text card-container" role="tab" id="headingEleven11">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven11" aria-expanded="false" aria-controls="collapseEleven11">
+                            <div class="btn-group-vertical" role="group" aria-label="collapseEleven11" style="width:100%; height:100%;">
+                                <button type="button" class="btn btn-outline-dark d-flex align-items-center shadow-none rounded-0">Contact Us</button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!--card twelve-->
+                <div class="card rounded-0">
+                    <div class="card-text card-container" role="tab" id="headingTwelve12">
+                        <a class="collapsed" data-toggle="collapse" href="#collapseTwelve12" aria-expanded="false" aria-controls="collapseTwelve12">
+                            <div class="btn-group-vertical" role="group" aria-label="collapseTwelve12" style="width:100%; height:100%;">
+                                <button type="button" class="btn btn-outline-dark d-flex align-items-center shadow-none rounded-0">Shipping/Site Policy</button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div> <!--end of accordion-->
+        </div><!--end of sidebar navigation div-->
+                                                    <!--TODO: fix the breakpoints and smoothness of the transitions-->
+        <div class="col-12 col-md body-container">
+            <div class="card">
+                <div class="row no-gutters">
+                  <div class="col-sm">
+                    <div class="card-body" style="padding: 5px;">
+                      <h1 class="card-title">New Arrivals</h1>
+                      <div class="container bg-faded" style="padding: 0px;">
+                        <div class="card-columns">
+                            <div class="card">
+                                <img class="card-img-top img-fluid" src="//placehold.it/800x600/555" alt="Card image cap">
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top img-fluid" src="//placehold.it/800x600" alt="Card image cap">
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top img-fluid" src="//placehold.it/800x600/eee" alt="Card image cap">
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top img-fluid" src="//placehold.it/800x600/111/fff" alt="Card image cap">
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top img-fluid" src="//placehold.it/800x600" alt="Card image cap">
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top img-fluid" src="//placehold.it/800x600" alt="Card image cap">
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top img-fluid" src="//placehold.it/800x600" alt="Card image cap">
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top img-fluid" src="//placehold.it/800x600/220022" alt="Card image cap">
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top img-fluid" src="//placehold.it/800x600" alt="Card image cap">
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top img-fluid" src="//placehold.it/800x600/55ff66/000" alt="Card image cap">
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top img-fluid" src="//placehold.it/800x600" alt="Card image cap">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div><!--end of body column div-->
+    </div>
+</div>
+
+<footer class="site-footer d-flex align-items-end">
+    <div class="container-fluid mb-2">
+        <div class="row">
+            <div class="col text-center">
+                <a class="btn btn-social-icon btn-lg btn-white btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                <a class="btn btn-social-icon btn-lg btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                <a class="btn btn-social-icon btn-lg btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                <a class="btn btn-social-icon btn-lg btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+            
+                <div class="col footer-text">
+                    <p><small>all right reserved &#124; copyright &#169; 2020 &#124; mantisplace.com</small></p>
+                </div>
+            </div>
+       </div>
+    </div>
+</footer>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
