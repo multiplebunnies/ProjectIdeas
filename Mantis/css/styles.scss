@@ -1,0 +1,109 @@
+$bright-green: #59916d;   /* header and footer background */
+$light-gray: #f9f9f9;     /* navbar card headers backgrounds */
+$almost-black: #202020;   /* header, card header, and card body fonts */
+
+/*general website formatting------------------------------------------------------------------*/
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+footer, .nav-item, h5 {
+    font-family: "Raleway", sans-serif;
+}
+
+h1 {
+    font-family: 'Aladin', sans-serif;
+}
+
+.navbar-dark{
+    background-color: $bright-green;
+}
+
+/*HEADER CUSTOM styles-------------------------------------------------------------------------*/
+a.website-name {
+    color:$almost-black;
+}
+
+.website-name:hover{
+    text-decoration: none;
+    color: white;
+}
+
+/*NAVBAR (top) styles---------------------------------------------------------------------------*/
+.navbar-nav{                /*add space after website logo*/
+    padding:40px;
+}
+
+/*CUSTOM page containers + id's-----------------------------------------------------------------*/
+.sidebar-container{         /*fixed width to sidebar; min height associated w/ body height*/
+    width: 300px;
+    height: 500px;
+    overflow-y: auto;
+}
+
+.body-container{            /*body container to give min height*/
+    min-height: 500px;
+    padding: 15px;
+}
+
+.site-footer{
+    background-color: $bright-green;
+    min-height: 150px;
+    color: white;
+}
+
+/*CUSTOM MEDIA QUERY for shopping bag------------------------------------------------------------*/
+@media only screen and (min-width: 992px){
+    .shopping-bag {
+        position: absolute;
+        top: 50px;
+        right:30px;
+    }
+}
+
+/*SIDEBAR CUSTOM container and cards styling-----------------------------------------------------*/
+.card-container a:hover, .card-header a:hover{    /*change card header and body styles*/
+    text-decoration:none;
+}
+
+.card-header a {
+    color: $almost-black;
+}
+
+.card-header{
+    height: 41.5px;
+}
+
+.card-container{
+    background-color: $light-gray;
+    height:40px;
+}
+
+.card-container a {
+    color: $almost-black;
+}
+
+.card-body{
+    padding:0;
+}
+
+.fa-plus {
+    color: gray;
+}
+
+.btn:focus {            /*reformat the buttons in sidebar nav*/
+    box-shadow: none;
+}
+.btn-outline-dark{
+    border: none;
+    padding-left: 20px;
+}
+
+/*FOOTER reformat of text items and background----------------------------------------------------*/
+.footer-text p{
+    margin: 0;
+}
+
+.btn-social-icon{
+    color: white;
+}
