@@ -1,0 +1,33 @@
+/*FOOTER reformat of text items and background----------------------------------------------------*/
+@import "variables.scss";
+
+.site-footer{                           /*CUSTOM container*/
+    background-color: $bright-green;
+    min-height: 150px;
+    color: white;
+}
+
+.footer-text p{
+    margin: 0;
+}
+
+.btn-social-icon{
+    color: white;
+}
+
+/*SCROLL UP ---------------------------------------------------------------------------------------*/
+.scrollUp {
+    .fa {
+        color: gray;
+    }
+
+    .fa {
+        p {
+            font-family: "Raleway", sans-serif;
+        }
+    }
+
+    .fa:hover{
+        color: $bright-green;
+    }
+}

@@ -1,0 +1,18 @@
+/*general website formatting------------------------------------------------------------------*/
+@import "variables.scss";
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+footer, .nav-item, h5 {
+    font-family: "Raleway", sans-serif;
+}
+
+h1 {
+    font-family: 'Aladin', sans-serif;
+}
+
+.navbar-dark{
+    background-color: $bright-green;
+}

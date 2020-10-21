@@ -1,0 +1,51 @@
+/*SIDEBAR CUSTOM container and cards styling--------------------------------------------------------------*/
+@import "variables.scss";
+
+.sidebar-container{         /*CUSTOM: fixed width to sidebar; min height associated w/ body height*/
+    width: 300px;
+    height: 500px;
+    overflow-y: auto;
+}
+
+.card-container a:hover, .card-header a:hover{    /*change card header and body styles*/
+    text-decoration:none;
+}
+
+.card-header a {
+    color: $almost-black;
+}
+
+.card-header{
+    height: 41.5px;
+}
+
+.card-container{
+    background-color: $light-gray;
+    height:40px;
+}
+
+.card-container a {
+    color: $almost-black;
+}
+
+.card-body{
+    padding:0;
+}
+
+.fa-plus {
+    color: gray;
+}
+
+/*buttons-------------------------------------------------------------*/
+
+.btn:focus {            /*reformat the buttons in sidebar nav*/
+    box-shadow: none;
+}
+.btn-outline-dark{
+    border: none;
+    padding-left: 20px;
+}
+
+.btn-link:hover{        /*buttons in nav bar hover text color is white*/
+    color: $light-gray;
+}

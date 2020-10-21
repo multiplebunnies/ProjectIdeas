@@ -1,0 +1,9 @@
+/*body container styling---------------------------------------------------------------------*/
+@import "variables.scss";
+
+.body-container{            /*CUSTOM container: to give min height*/
+    min-height: 500px;
+    padding: 15px;
+}
+
+

@@ -1,0 +1,43 @@
+/*HEADER CUSTOM styles-------------------------------------------------------------------------*/
+@import "variables.scss";
+
+a.website-name {                              /*CUSTOM container*/
+    color:$almost-black;
+}
+
+.website-name:hover{
+    text-decoration: none;
+    color: $light-gray;
+}
+
+/*NAVBAR (top) styles---------------------------------------------------------------------------*/
+.navbar-nav{                                 /*add space after website logo*/
+    padding:40px;
+}
+
+/*MODAL styles----------------------------------------------------------------------------------*/
+.modal-open{
+    overflow: scroll;                       /*this enables the background with a scrollbar*/
+}
+
+.modal-header{
+    background-color: $bright-green;
+}
+
+.modal-footer{
+    padding: 0;
+    background-color: $light-gray;
+}
+
+.modal-footer .col-6{
+    border: 1px solid green;
+}
+/*CUSTOM MEDIA QUERY for shopping bag------------------------------------------------------------*/
+@media only screen and (min-width: 992px){   /*CUSTOM container*/
+    .shopping-bag {
+        position: absolute;
+        top: 50px;
+        right:30px;
+    }
+}
+
