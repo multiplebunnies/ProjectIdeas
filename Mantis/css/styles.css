@@ -7256,3 +7256,13 @@ a.website-name {
 
 .btn-social-icon {
   color: white; }
+
+/*SCROLL UP ---------------------------------------------------------------------------------------*/
+.scrollUp .fa {
+  color: gray; }
+
+.scrollUp .fa p {
+  font-family: "Raleway", sans-serif; }
+
+.scrollUp .fa:hover {
+  color: #59916d; }
