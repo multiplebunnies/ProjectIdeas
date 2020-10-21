@@ -1,5 +1,7 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
 $bright-green: #59916d;   /* header and footer background */
-$light-gray: #f9f9f9;     /* navbar card headers backgrounds */
+$light-gray: #f9f9f9;     /* navbar card headers backgrounds; HOVER font color: navbar, header Mantis */
 $almost-black: #202020;   /* header, card header, and card body fonts */
 
 /*general website formatting------------------------------------------------------------------*/
@@ -26,7 +28,7 @@ a.website-name {
 
 .website-name:hover{
     text-decoration: none;
-    color: white;
+    color: $light-gray;
 }
 
 /*NAVBAR (top) styles---------------------------------------------------------------------------*/
@@ -99,6 +101,9 @@ a.website-name {
     padding-left: 20px;
 }
 
+.btn-link:hover{        /*buttons in nav bar hover text color is white*/
+    color: $light-gray;
+}
 /*FOOTER reformat of text items and background----------------------------------------------------*/
 .footer-text p{
     margin: 0;
