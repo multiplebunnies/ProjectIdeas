@@ -39,8 +39,10 @@ a.website-name {
 
 /*MODAL styles----------------------------------------------------------------------------------*/
 .modal-open {
-  overflow: scroll;
-  /*this enables the background with a scrollbar*/ }
+  padding: 0 !important;
+  /*the modal.body behavior pushes everything to the right...*/
+  overflow-y: auto;
+  /*this stops it from doing that*/ }
 
 .modal-header {
   background-color: #59916d; }
