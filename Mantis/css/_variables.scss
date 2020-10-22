@@ -1,5 +1,17 @@
 /*variables ---------------------------------------------------------------------------------------------*/
-
 $bright-green: #59916d;   /* header and footer background */
 $light-gray: #f9f9f9;     /* navbar card headers backgrounds; HOVER font color: navbar, header Mantis */
 $almost-black: #202020;   /* header, card header, and card body fonts */
+
+
+/*button ------------------------------------------------------------------------------------------------*/
+.btn-custom {
+    @include button-variant($bright-green, $bright-green);
+    color: #fff;
+}
+
+/*button-variant($background, $border, 
+$hover-background: darken($background, 10%), 
+$hover-border: darken($border, 10%), 
+$active-background: darken($background, 10%), 
+$active-border: darken($border, 12.5%))*/

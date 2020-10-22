@@ -30,9 +30,6 @@ a.website-name {                              /*CUSTOM container*/
     background-color: $light-gray;
 }
 
-.modal-footer .col-6{
-    border: 1px solid green;
-}
 /*CUSTOM MEDIA QUERY for shopping bag------------------------------------------------------------*/
 @media only screen and (min-width: 992px){   /*CUSTOM container*/
     .shopping-bag {
@@ -41,4 +38,15 @@ a.website-name {                              /*CUSTOM container*/
         right:30px;
     }
 }
+
+@media only screen and (min-width: 992px){   /*stop default modal behavor from pushing this to the right*/
+    .modal-open{
+        .shopping-bag {
+            position: absolute;
+            top: 50px;
+            right:45px;
+        }
+    }
+}
+
 

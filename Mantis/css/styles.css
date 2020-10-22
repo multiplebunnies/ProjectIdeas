@@ -3,10 +3,43 @@
 /* header and footer background */
 /* navbar card headers backgrounds; HOVER font color: navbar, header Mantis */
 /* header, card header, and card body fonts */
+/*button ------------------------------------------------------------------------------------------------*/
+.btn-custom {
+  color: #fff;
+  background-color: #59916d;
+  border-color: #59916d;
+  color: #fff; }
+  .btn-custom:hover {
+    color: #fff;
+    background-color: #4a795b;
+    border-color: #467155; }
+  .btn-custom:focus, .btn-custom.focus {
+    color: #fff;
+    background-color: #4a795b;
+    border-color: #467155;
+    box-shadow: 0 0 0 0.2rem rgba(114, 162, 131, 0.5); }
+  .btn-custom.disabled, .btn-custom:disabled {
+    color: #fff;
+    background-color: #59916d;
+    border-color: #59916d; }
+  .btn-custom:not(:disabled):not(.disabled):active, .btn-custom:not(:disabled):not(.disabled).active,
+  .show > .btn-custom.dropdown-toggle {
+    color: #fff;
+    background-color: #467155;
+    border-color: #41694f; }
+    .btn-custom:not(:disabled):not(.disabled):active:focus, .btn-custom:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-custom.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(114, 162, 131, 0.5); }
+
+/*button-variant($background, $border, 
+$hover-background: darken($background, 10%), 
+$hover-border: darken($border, 10%), 
+$active-background: darken($background, 10%), 
+$active-border: darken($border, 12.5%))*/
 body {
   font-family: "Open Sans", sans-serif; }
 
-footer, .nav-item, h5 {
+footer, .nav-item, h5, .modal-footer {
   font-family: "Raleway", sans-serif; }
 
 h1 {
@@ -19,11 +52,77 @@ h1 {
 /* header and footer background */
 /* navbar card headers backgrounds; HOVER font color: navbar, header Mantis */
 /* header, card header, and card body fonts */
+/*button ------------------------------------------------------------------------------------------------*/
+.btn-custom {
+  color: #fff;
+  background-color: #59916d;
+  border-color: #59916d;
+  color: #fff; }
+  .btn-custom:hover {
+    color: #fff;
+    background-color: #4a795b;
+    border-color: #467155; }
+  .btn-custom:focus, .btn-custom.focus {
+    color: #fff;
+    background-color: #4a795b;
+    border-color: #467155;
+    box-shadow: 0 0 0 0.2rem rgba(114, 162, 131, 0.5); }
+  .btn-custom.disabled, .btn-custom:disabled {
+    color: #fff;
+    background-color: #59916d;
+    border-color: #59916d; }
+  .btn-custom:not(:disabled):not(.disabled):active, .btn-custom:not(:disabled):not(.disabled).active,
+  .show > .btn-custom.dropdown-toggle {
+    color: #fff;
+    background-color: #467155;
+    border-color: #41694f; }
+    .btn-custom:not(:disabled):not(.disabled):active:focus, .btn-custom:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-custom.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(114, 162, 131, 0.5); }
+
+/*button-variant($background, $border, 
+$hover-background: darken($background, 10%), 
+$hover-border: darken($border, 10%), 
+$active-background: darken($background, 10%), 
+$active-border: darken($border, 12.5%))*/
 /*HEADER CUSTOM styles-------------------------------------------------------------------------*/
 /*variables ---------------------------------------------------------------------------------------------*/
 /* header and footer background */
 /* navbar card headers backgrounds; HOVER font color: navbar, header Mantis */
 /* header, card header, and card body fonts */
+/*button ------------------------------------------------------------------------------------------------*/
+.btn-custom {
+  color: #fff;
+  background-color: #59916d;
+  border-color: #59916d;
+  color: #fff; }
+  .btn-custom:hover {
+    color: #fff;
+    background-color: #4a795b;
+    border-color: #467155; }
+  .btn-custom:focus, .btn-custom.focus {
+    color: #fff;
+    background-color: #4a795b;
+    border-color: #467155;
+    box-shadow: 0 0 0 0.2rem rgba(114, 162, 131, 0.5); }
+  .btn-custom.disabled, .btn-custom:disabled {
+    color: #fff;
+    background-color: #59916d;
+    border-color: #59916d; }
+  .btn-custom:not(:disabled):not(.disabled):active, .btn-custom:not(:disabled):not(.disabled).active,
+  .show > .btn-custom.dropdown-toggle {
+    color: #fff;
+    background-color: #467155;
+    border-color: #41694f; }
+    .btn-custom:not(:disabled):not(.disabled):active:focus, .btn-custom:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-custom.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(114, 162, 131, 0.5); }
+
+/*button-variant($background, $border, 
+$hover-background: darken($background, 10%), 
+$hover-border: darken($border, 10%), 
+$active-background: darken($background, 10%), 
+$active-border: darken($border, 12.5%))*/
 a.website-name {
   /*CUSTOM container*/
   color: #202020; }
@@ -51,9 +150,6 @@ a.website-name {
   padding: 0;
   background-color: #f9f9f9; }
 
-.modal-footer .col-6 {
-  border: 1px solid green; }
-
 /*CUSTOM MEDIA QUERY for shopping bag------------------------------------------------------------*/
 @media only screen and (min-width: 992px) {
   /*CUSTOM container*/
@@ -62,11 +158,51 @@ a.website-name {
     top: 50px;
     right: 30px; } }
 
+@media only screen and (min-width: 992px) {
+  /*stop default modal behavor from pushing this to the right*/
+  .modal-open .shopping-bag {
+    position: absolute;
+    top: 50px;
+    right: 45px; } }
+
 /*body container styling---------------------------------------------------------------------*/
 /*variables ---------------------------------------------------------------------------------------------*/
 /* header and footer background */
 /* navbar card headers backgrounds; HOVER font color: navbar, header Mantis */
 /* header, card header, and card body fonts */
+/*button ------------------------------------------------------------------------------------------------*/
+.btn-custom {
+  color: #fff;
+  background-color: #59916d;
+  border-color: #59916d;
+  color: #fff; }
+  .btn-custom:hover {
+    color: #fff;
+    background-color: #4a795b;
+    border-color: #467155; }
+  .btn-custom:focus, .btn-custom.focus {
+    color: #fff;
+    background-color: #4a795b;
+    border-color: #467155;
+    box-shadow: 0 0 0 0.2rem rgba(114, 162, 131, 0.5); }
+  .btn-custom.disabled, .btn-custom:disabled {
+    color: #fff;
+    background-color: #59916d;
+    border-color: #59916d; }
+  .btn-custom:not(:disabled):not(.disabled):active, .btn-custom:not(:disabled):not(.disabled).active,
+  .show > .btn-custom.dropdown-toggle {
+    color: #fff;
+    background-color: #467155;
+    border-color: #41694f; }
+    .btn-custom:not(:disabled):not(.disabled):active:focus, .btn-custom:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-custom.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(114, 162, 131, 0.5); }
+
+/*button-variant($background, $border, 
+$hover-background: darken($background, 10%), 
+$hover-border: darken($border, 10%), 
+$active-background: darken($background, 10%), 
+$active-border: darken($border, 12.5%))*/
 .body-container {
   /*CUSTOM container: to give min height*/
   min-height: 500px;
@@ -77,6 +213,39 @@ a.website-name {
 /* header and footer background */
 /* navbar card headers backgrounds; HOVER font color: navbar, header Mantis */
 /* header, card header, and card body fonts */
+/*button ------------------------------------------------------------------------------------------------*/
+.btn-custom {
+  color: #fff;
+  background-color: #59916d;
+  border-color: #59916d;
+  color: #fff; }
+  .btn-custom:hover {
+    color: #fff;
+    background-color: #4a795b;
+    border-color: #467155; }
+  .btn-custom:focus, .btn-custom.focus {
+    color: #fff;
+    background-color: #4a795b;
+    border-color: #467155;
+    box-shadow: 0 0 0 0.2rem rgba(114, 162, 131, 0.5); }
+  .btn-custom.disabled, .btn-custom:disabled {
+    color: #fff;
+    background-color: #59916d;
+    border-color: #59916d; }
+  .btn-custom:not(:disabled):not(.disabled):active, .btn-custom:not(:disabled):not(.disabled).active,
+  .show > .btn-custom.dropdown-toggle {
+    color: #fff;
+    background-color: #467155;
+    border-color: #41694f; }
+    .btn-custom:not(:disabled):not(.disabled):active:focus, .btn-custom:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-custom.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(114, 162, 131, 0.5); }
+
+/*button-variant($background, $border, 
+$hover-background: darken($background, 10%), 
+$hover-border: darken($border, 10%), 
+$active-background: darken($background, 10%), 
+$active-border: darken($border, 12.5%))*/
 .sidebar-container {
   /*CUSTOM: fixed width to sidebar; min height associated w/ body height*/
   width: 300px;
@@ -124,6 +293,39 @@ a.website-name {
 /* header and footer background */
 /* navbar card headers backgrounds; HOVER font color: navbar, header Mantis */
 /* header, card header, and card body fonts */
+/*button ------------------------------------------------------------------------------------------------*/
+.btn-custom {
+  color: #fff;
+  background-color: #59916d;
+  border-color: #59916d;
+  color: #fff; }
+  .btn-custom:hover {
+    color: #fff;
+    background-color: #4a795b;
+    border-color: #467155; }
+  .btn-custom:focus, .btn-custom.focus {
+    color: #fff;
+    background-color: #4a795b;
+    border-color: #467155;
+    box-shadow: 0 0 0 0.2rem rgba(114, 162, 131, 0.5); }
+  .btn-custom.disabled, .btn-custom:disabled {
+    color: #fff;
+    background-color: #59916d;
+    border-color: #59916d; }
+  .btn-custom:not(:disabled):not(.disabled):active, .btn-custom:not(:disabled):not(.disabled).active,
+  .show > .btn-custom.dropdown-toggle {
+    color: #fff;
+    background-color: #467155;
+    border-color: #41694f; }
+    .btn-custom:not(:disabled):not(.disabled):active:focus, .btn-custom:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-custom.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(114, 162, 131, 0.5); }
+
+/*button-variant($background, $border, 
+$hover-background: darken($background, 10%), 
+$hover-border: darken($border, 10%), 
+$active-background: darken($background, 10%), 
+$active-border: darken($border, 12.5%))*/
 .site-footer {
   /*CUSTOM container*/
   background-color: #59916d;
@@ -144,4 +346,4 @@ a.website-name {
   font-family: "Raleway", sans-serif; }
 
 .scrollUp .fa:hover {
-  color: #59916d; }
+  color: #202020; }
