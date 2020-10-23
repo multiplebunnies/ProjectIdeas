@@ -1,4 +1,4 @@
-/*MODAL styles----------------------------------------------------------------------------------*/
+/*SHOPPING BAG MODAL styles------------------------------------------------------------------------*/
 @import "variables.scss";
 
 .modal-open{
@@ -34,8 +34,8 @@
     }
 }
 
-/*modal container image overlay---------------------------------------------------------------------*/
-.img-container{
+/*shopping container image overlay---------------------------------------------------------------------*/
+.img-container{                             /*CUSTOM container*/
     position:relative;
     display:inline-block;
 }

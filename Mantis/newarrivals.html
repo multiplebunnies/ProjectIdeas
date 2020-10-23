@@ -18,10 +18,12 @@
 </head>
 
 <body>
+
+<!-- Start top navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top">                    <!--NOTE: on lg and smaller, the toggler appears-->
     <div class="container-fluid">                                               <!--NOTE: fill the width of the entire page-->
-        <a class="navbar-brand d-none d-lg-block" href="#"><img src="img/mantis_full.png" alt="mantis place logo" style="max-width:80px;"/></a>
-        <a class="website-name" href="#"><h1>Mantis Place</h1></a>              <!--CUSTOM CLASS: website-name, and shopping-bag-->
+        <a class="navbar-brand d-none d-lg-block" href="index.html"><img src="img/mantis_full.png" alt="mantis place logo" style="max-width:80px;"/></a>
+        <a class="website-name" href="index.html"><h1>Mantis Place</h1></a>              <!--CUSTOM CLASS: website-name, and shopping-bag-->
         
         <button class="btn shopping-bag" type="button" role="button" data-toggle="modal" data-target="#shoppingModal">
             <i class="fa fa-shopping-bag fa-lg text-light"></i>
@@ -50,108 +52,21 @@
         </div>
     </div>
 </nav>
+<!-- End top navbar -->
 
-<!-- The Shopping Modal -->
+<!-- Start shopping bag modal -->
 <div class="modal fade" id="shoppingModal" tabindex="-1" role="dialog" aria-labelledby="shoppingModal" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title">Shopping Cart</h1>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="row">
-              <div class="col-4">
-                  <div class="img-container">
-                      <img class="img-fluid img-thumbnail" src="img/mantis-standin.jpg" alt="Mantis Stand In Image">
-                      <a href="ITEM-PAGE.html">
-                          <div class="overlay">
-                              <span>View</span>
-                         </div>
-                      </a>
-                 </div>
-              </div>
-              <div class="col">
-                  <div class="row">Praying Mantis</div>
-                  <div class="row">$40.00</div>
-                  <div class="row">
-                    <button type="button" class="btn btn-sm btn-custom rounded-0">+</button>
-                    <button type="button" class="btn btn-sm rounded-0" style="border: 1px solid #59916d;">1</button>
-                    <button type="button" class="btn btn-sm btn-custom rounded-0">-</button>
-                  </div>
-              </div>
-          </div>
+        <div class="modal-content">
 
-          <div class="row">
-            <div class="col-4">
-                <div class="img-container">
-                    <img class="img-fluid img-thumbnail" src="img/fruitfly-standin.jpg" alt="Fruit Fly Stand In Image">
-                    <a href="ITEM-PAGE.html">
-                        <div class="overlay">
-                            <span>View</span>
-                       </div>
-                    </a>
-               </div>
+            <div class="modal-header">
+                <h1 class="modal-title">Shopping Cart</h1>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
             </div>
-            <div class="col">
-                <div class="row">Fruit Flies</div>
-                <div class="row">$10.00</div>
-                <div class="row">
-                  <button type="button" class="btn btn-sm btn-custom rounded-0">+</button>
-                  <button type="button" class="btn btn-sm rounded-0" style="border: 1px solid #59916d;">1</button>
-                  <button type="button" class="btn btn-sm btn-custom rounded-0">-</button>
-                </div>
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="col-4">
-                <div class="img-container">
-                    <img class="img-fluid img-thumbnail" src="img/fruitfly-standin.jpg" alt="Fruit Fly Stand In Image">
-                    <a href="ITEM-PAGE.html">
-                        <div class="overlay">
-                            <span>View</span>
-                       </div>
-                    </a>
-               </div>
-            </div>
-            <div class="col">
-                <div class="row">Containers</div>
-                <div class="row">$5.00</div>
-                <div class="row">
-                  <button type="button" class="btn btn-sm btn-custom rounded-0">+</button>
-                  <button type="button" class="btn btn-sm rounded-0" style="border: 1px solid #59916d;">1</button>
-                  <button type="button" class="btn btn-sm btn-custom rounded-0">-</button>
-                </div>
-            </div>
-        </div>
-
-        </div>
-        <div class="modal-footer">
-            <div class="col-8">
-                <strong>Subtotal: $55.00</strong>
-            </div>
-            <div class="col">
-                <button type="button" class="btn btn-custom rounded-0" style="width:100%">View Cart</button>
-            </div>
-        </div>
-      </div>
-    </div>
-</div>
-
-<!--ITEM MODAL-->
-<div class="modal fade product-modal" id="item-Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-            <h1 class="modal-title">Product Preview</h1>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">×</span>
-            </button>
-          </div>
-          <div class="modal-body modal-product-body mr-3">
+            <div class="modal-body">
             <div class="row">
                 <div class="col-4">
                     <div class="img-container">
@@ -159,34 +74,130 @@
                         <a href="ITEM-PAGE.html">
                             <div class="overlay">
                                 <span>View</span>
-                           </div>
+                            </div>
                         </a>
-                   </div>
+                    </div>
                 </div>
                 <div class="col">
-                    <div class="row modal-item-name"><strong>Praying Mantis</strong></div>
-                    <div class="row modal-item-name mb-2">$40.00</div>
+                    <div class="row">Praying Mantis</div>
+                    <div class="row">$40.00</div>
                     <div class="row">
-                        Mantises are an order (Mantodea) of insects that contains over 
-                        2,400 species in about 430 genera in 15 families. The largest family 
-                        is the Mantidae ("mantids"). Mantises are distributed worldwide 
-                        in temperate and tropical habitats. They have triangular heads 
-                        with bulging eyes supported on flexible necks. 
+                        <button type="button" class="btn btn-sm btn-custom rounded-0">+</button>
+                        <button type="button" class="btn btn-sm rounded-0" style="border: 1px solid #59916d;">1</button>
+                        <button type="button" class="btn btn-sm btn-custom rounded-0">-</button>
                     </div>
                 </div>
             </div>
-          </div>
-          <div class="modal-footer">
-            <div class="col-6 col-sm-4">
-                <button type="button" class="btn btn-custom rounded-0" style="width:100%">View Product</button>
+
+            <div class="row">
+                <div class="col-4">
+                    <div class="img-container">
+                        <img class="img-fluid img-thumbnail" src="img/fruitfly-standin.jpg" alt="Fruit Stand In Image">
+                        <a href="ITEM-PAGE.html">
+                            <div class="overlay">
+                                <span>View</span>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">Fruit Flies</div>
+                    <div class="row">$10.00</div>
+                    <div class="row">
+                    <button type="button" class="btn btn-sm btn-custom rounded-0">+</button>
+                    <button type="button" class="btn btn-sm rounded-0" style="border: 1px solid #59916d;">1</button>
+                    <button type="button" class="btn btn-sm btn-custom rounded-0">-</button>
+                    </div>
+                </div>
             </div>
-          </div>
-          </div>
-        </div>
-      </div>
-  </div>
 
+            <div class="row">
+                <div class="col-4">
+                    <div class="img-container">
+                        <img class="img-fluid img-thumbnail" src="img/fruitfly-standin.jpg" alt="Fruit Fly Stand In Image">
+                        <a href="ITEM-PAGE.html">
+                            <div class="overlay">
+                                <span>View</span>
+                        </div>
+                        </a>
+                </div>
+                </div>
+                <div class="col">
+                    <div class="row">Containers</div>
+                    <div class="row">$5.00</div>
+                    <div class="row">
+                    <button type="button" class="btn btn-sm btn-custom rounded-0">+</button>
+                    <button type="button" class="btn btn-sm rounded-0" style="border: 1px solid #59916d;">1</button>
+                    <button type="button" class="btn btn-sm btn-custom rounded-0">-</button>
+                    </div>
+                </div>
+            </div>
 
+            </div>
+
+            <div class="modal-footer">
+                <div class="col-8">
+                    <strong>Subtotal: $55.00</strong>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-custom rounded-0" style="width:100%">View Cart</button>
+                </div>
+            </div>
+
+        </div> <!-- End modal content-->
+    </div> <!-- End modal dialog-->
+</div>
+<!-- End shopping bag modal -->
+
+<!-- Start product modal-->
+<div class="modal fade product-modal" id="item-Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title">Product Preview</h1>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+                </button>
+            </div>
+
+            <div class="modal-body modal-product-body mr-3">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="img-container">
+                            <img class="img-fluid img-thumbnail" src="img/mantis-standin.jpg" alt="Mantis Stand In Image">
+                            <a href="ITEM-PAGE.html">
+                                <div class="overlay">
+                                    <span>View</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row modal-item-name"><strong>Praying Mantis</strong></div>
+                        <div class="row modal-item-name mb-2">$40.00</div>
+                        <div class="row">
+                            Mantises are an order (Mantodea) of insects that contains over 
+                            2,400 species in about 430 genera in 15 families. The largest family 
+                            is the Mantidae ("mantids"). Mantises are distributed worldwide 
+                            in temperate and tropical habitats. They have triangular heads 
+                            with bulging eyes supported on flexible necks. 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <div class="col-6 col-sm-4">
+                    <button type="button" class="btn btn-custom rounded-0" style="width:100%">View Product</button>
+                </div>
+            </div>
+
+        </div> <!-- End modal content-->
+    </div> <!-- End modal dialog-->
+</div>
+<!-- End product modal-->
+
+<!-- Start page container -->
 <div class="container-fluid">
     <div class="row">                                                           <!--CUSTOM CLASS: sidebar-container-->
         <div class="d-none d-lg-block sidebar-container">                       <!--NOTE: make sidebar disappear at lg and smaller viewports-->
@@ -398,291 +409,308 @@
                     </div>
                 </div>
 
-            </div> <!--end of accordion-->
-        </div><!--end of sidebar navigation div-->
+            </div> <!-- End of accordion-->
+        </div>
+        <!-- End of sidebar navigation div-->
 
+        <!-- Start body container -->
         <div class="col-12 col-md body-container">
             <div class="card">
                 <div class="row no-gutters">
-                  <div class="col-sm">
-                    <div class="card-body" style="padding: 5px;">
-                        <div class="row">
-                            <div class="col">
-                                <h1 class="card-title">
-                                    New Arrivals
-                                </h1>
-                            </div>
-                            <div class="col mt-1">
-                                <form class="container-fluid">
-                                    <div class="form-group row">
-                                        <select class="form-control">
-                                            <option value="select">Sort by Featured</option>
-                                            <option value="1">Sort by Nymphs</option>
-                                            <option value="2">Sort by Adults</option>
-                                        </select>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    
-                      <p class="card-text">
+                    <div class="col-sm">
 
-                        <div class="container-flex">
+                        <div class="card-body" style="padding: 5px;">
                             <div class="row">
-                                <!-- image 1-->
-                                <div class="col-6 col-md-4 pb-3">
-                                    <div class="card" style="border: 0px;">
-                                        <div class="product-img-container">
-                                            <img class="card-img-top img-fluid" src="img/mantis-standin.jpg" alt="Mantis">
-                                            <a>
-                                                <div class="overlay">
-                                                    <span><button type="button" class="btn btn-light" 
-                                                        data-toggle="modal" data-target="#item-Modal">
-                                                        <i class="fa fa-search"></i> Quickview</button></span>
-                                               </div>
-                                            </a>
+                                <div class="col">
+                                    <h1 class="card-title">
+                                        New Arrivals
+                                    </h1>
+                                </div>
+                                <div class="col mt-1">
+                                    <form class="container-fluid">
+                                        <div class="form-group row">
+                                            <select class="form-control">
+                                                <option value="select">Sort by Featured</option>
+                                                <option value="1">Sort by Nymphs</option>
+                                                <option value="2">Sort by Adults</option>
+                                            </select>
                                         </div>
-                                        <div class="card-body">
-                                          <p class="card-text mb-0 item-name">Mantis Religiosa</p>
-                                          <p class="card-text"><small>$35.00</small></p>
+                                    </form>
+                                </div>
+                            </div>
+                        <p class="card-text">
+                            
+                            <div class="container-flex">
+                                <div class="row">
+                                    <!-- image 1-->
+                                    <div class="col-6 col-md-4 pb-3">
+                                        <div class="card" style="border: 0px;">
+                                            <div class="product-img-container">
+                                                <img class="card-img-top img-fluid" src="img/mantis-standin.jpg" alt="Mantis">
+                                                <a>
+                                                    <div class="overlay">
+                                                        <span><button type="button" class="btn btn-light" 
+                                                            data-toggle="modal" data-target="#item-Modal">
+                                                            <i class="fa fa-search"></i> Quickview</button>
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="card-body">
+                                            <p class="card-text mb-0 item-name">Mantis Religiosa</p>
+                                            <p class="card-text"><small>$35.00</small></p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                    
-                                <!-- image 2-->
-                                <div class="col-6 col-md-4 pb-3">
-                                    <div class="card" style="border: 0px;">
-                                        <div class="product-img-container">
-                                            <img class="card-img-top img-fluid" src="img/mantis-standin.jpg" alt="Mantis">
-                                            <a>
-                                                <div class="overlay">
-                                                    <span><button type="button" class="btn btn-light" 
-                                                        data-toggle="modal" data-target="#item-Modal">
-                                                        <i class="fa fa-search"></i> Quickview</button></span>
-                                               </div>
-                                            </a>
-                                        </div>
-                                        <div class="card-body">
-                                          <p class="card-text mb-0 item-name">Mantis Religiosa</p>
-                                          <p class="card-text"><small>$35.00</small></p>
+                                        
+                                    <!-- image 2-->
+                                    <div class="col-6 col-md-4 pb-3">
+                                        <div class="card" style="border: 0px;">
+                                            <div class="product-img-container">
+                                                <img class="card-img-top img-fluid" src="img/mantis-standin.jpg" alt="Mantis">
+                                                <a>
+                                                    <div class="overlay">
+                                                        <span><button type="button" class="btn btn-light" 
+                                                            data-toggle="modal" data-target="#item-Modal">
+                                                            <i class="fa fa-search"></i> Quickview</button>
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="card-body">
+                                            <p class="card-text mb-0 item-name">Mantis Religiosa</p>
+                                            <p class="card-text"><small>$35.00</small></p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <!-- image 3-->
-                                <div class="col-6 col-md-4  pb-3">
-                                    <div class="card" style="border: 0px;">
-                                        <div class="product-img-container">
-                                            <img class="card-img-top img-fluid" src="img/mantis-standin.jpg" alt="Mantis">
-                                            <a>
-                                                <div class="overlay">
-                                                    <span><button type="button" class="btn btn-light" 
-                                                        data-toggle="modal" data-target="#item-Modal">
-                                                        <i class="fa fa-search"></i> Quickview</button></span>
-                                               </div>
-                                            </a>
-                                        </div>
-                                        <div class="card-body">
-                                          <p class="card-text mb-0 item-name">Mantis Religiosa</p>
-                                          <p class="card-text"><small>$35.00</small></p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- image 4-->
-                                <div class="col-6 col-md-4 pb-3">
-                                    <div class="card" style="border: 0px;">
-                                        <div class="product-img-container">
-                                            <img class="card-img-top img-fluid" src="img/mantis-standin.jpg" alt="Mantis">
-                                            <a>
-                                                <div class="overlay">
-                                                    <span><button type="button" class="btn btn-light" 
-                                                        data-toggle="modal" data-target="#item-Modal">
-                                                        <i class="fa fa-search"></i> Quickview</button></span>
-                                               </div>
-                                            </a>
-                                        </div>
-                                        <div class="card-body">
-                                          <p class="card-text mb-0 item-name">Mantis Religiosa</p>
-                                          <p class="card-text"><small>$35.00</small></p>
+                                    <!-- image 3-->
+                                    <div class="col-6 col-md-4  pb-3">
+                                        <div class="card" style="border: 0px;">
+                                            <div class="product-img-container">
+                                                <img class="card-img-top img-fluid" src="img/mantis-standin.jpg" alt="Mantis">
+                                                <a>
+                                                    <div class="overlay">
+                                                        <span><button type="button" class="btn btn-light" 
+                                                            data-toggle="modal" data-target="#item-Modal">
+                                                            <i class="fa fa-search"></i> Quickview</button>
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="card-body">
+                                            <p class="card-text mb-0 item-name">Mantis Religiosa</p>
+                                            <p class="card-text"><small>$35.00</small></p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <!--image 5-->
-                                <div class="col-6 col-md-4 pb-3">
-                                    <div class="card" style="border: 0px;">
-                                        <div class="product-img-container">
-                                            <img class="card-img-top img-fluid" src="img/mantis-standin.jpg" alt="Mantis">
-                                            <a>
-                                                <div class="overlay">
-                                                    <span><button type="button" class="btn btn-light" 
-                                                        data-toggle="modal" data-target="#item-Modal">
-                                                        <i class="fa fa-search"></i> Quickview</button></span>
-                                               </div>
-                                            </a>
-                                        </div>
-                                        <div class="card-body">
-                                          <p class="card-text mb-0 item-name">Mantis Religiosa</p>
-                                          <p class="card-text"><small>$35.00</small></p>
+                                    <!-- image 4-->
+                                    <div class="col-6 col-md-4 pb-3">
+                                        <div class="card" style="border: 0px;">
+                                            <div class="product-img-container">
+                                                <img class="card-img-top img-fluid" src="img/mantis-standin.jpg" alt="Mantis">
+                                                <a>
+                                                    <div class="overlay">
+                                                        <span><button type="button" class="btn btn-light" 
+                                                            data-toggle="modal" data-target="#item-Modal">
+                                                            <i class="fa fa-search"></i> Quickview</button>
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="card-body">
+                                            <p class="card-text mb-0 item-name">Mantis Religiosa</p>
+                                            <p class="card-text"><small>$35.00</small></p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <!-- image 6-->
-                                <div class="col-6 col-md-4 pb-3">
-                                    <div class="card" style="border: 0px;">
-                                        <div class="product-img-container">
-                                            <img class="card-img-top img-fluid" src="img/mantis-standin.jpg" alt="Mantis">
-                                            <a>
-                                                <div class="overlay">
-                                                    <span><button type="button" class="btn btn-light" 
-                                                        data-toggle="modal" data-target="#item-Modal">
-                                                        <i class="fa fa-search"></i> Quickview</button></span>
-                                               </div>
-                                            </a>
-                                        </div>
-                                        <div class="card-body">
-                                          <p class="card-text mb-0 item-name">Mantis Religiosa</p>
-                                          <p class="card-text"><small>$35.00</small></p>
+                                    <!--image 5-->
+                                    <div class="col-6 col-md-4 pb-3">
+                                        <div class="card" style="border: 0px;">
+                                            <div class="product-img-container">
+                                                <img class="card-img-top img-fluid" src="img/mantis-standin.jpg" alt="Mantis">
+                                                <a>
+                                                    <div class="overlay">
+                                                        <span><button type="button" class="btn btn-light" 
+                                                            data-toggle="modal" data-target="#item-Modal">
+                                                            <i class="fa fa-search"></i> Quickview</button>
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="card-body">
+                                            <p class="card-text mb-0 item-name">Mantis Religiosa</p>
+                                            <p class="card-text"><small>$35.00</small></p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <!-- image 7-->
-                                <div class="col-6 col-md-4 pb-3">
-                                    <div class="card" style="border: 0px;">
-                                        <div class="product-img-container">
-                                            <img class="card-img-top img-fluid" src="img/mantis-standin.jpg" alt="Mantis">
-                                            <a>
-                                                <div class="overlay">
-                                                    <span><button type="button" class="btn btn-light" 
-                                                        data-toggle="modal" data-target="#item-Modal">
-                                                        <i class="fa fa-search"></i> Quickview</button></span>
-                                               </div>
-                                            </a>
-                                        </div>
-                                        <div class="card-body">
-                                          <p class="card-text mb-0 item-name">Mantis Religiosa</p>
-                                          <p class="card-text"><small>$35.00</small></p>
+                                    <!-- image 6-->
+                                    <div class="col-6 col-md-4 pb-3">
+                                        <div class="card" style="border: 0px;">
+                                            <div class="product-img-container">
+                                                <img class="card-img-top img-fluid" src="img/mantis-standin.jpg" alt="Mantis">
+                                                <a>
+                                                    <div class="overlay">
+                                                        <span><button type="button" class="btn btn-light" 
+                                                            data-toggle="modal" data-target="#item-Modal">
+                                                            <i class="fa fa-search"></i> Quickview</button>
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="card-body">
+                                            <p class="card-text mb-0 item-name">Mantis Religiosa</p>
+                                            <p class="card-text"><small>$35.00</small></p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <!-- image 8-->
-                                <div class="col-6 col-md-4 pb-3">
-                                    <div class="card" style="border: 0px;">
-                                        <div class="product-img-container">
-                                            <img class="card-img-top img-fluid" src="img/mantis-standin.jpg" alt="Mantis">
-                                            <a>
-                                                <div class="overlay">
-                                                    <span><button type="button" class="btn btn-light" 
-                                                        data-toggle="modal" data-target="#item-Modal">
-                                                        <i class="fa fa-search"></i> Quickview</button></span>
-                                               </div>
-                                            </a>
-                                        </div>
-                                        <div class="card-body">
-                                          <p class="card-text mb-0 item-name">Mantis Religiosa</p>
-                                          <p class="card-text"><small>$35.00</small></p>
+                                    <!-- image 7-->
+                                    <div class="col-6 col-md-4 pb-3">
+                                        <div class="card" style="border: 0px;">
+                                            <div class="product-img-container">
+                                                <img class="card-img-top img-fluid" src="img/mantis-standin.jpg" alt="Mantis">
+                                                <a>
+                                                    <div class="overlay">
+                                                        <span><button type="button" class="btn btn-light" 
+                                                            data-toggle="modal" data-target="#item-Modal">
+                                                            <i class="fa fa-search"></i> Quickview</button>
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="card-body">
+                                            <p class="card-text mb-0 item-name">Mantis Religiosa</p>
+                                            <p class="card-text"><small>$35.00</small></p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <!-- image 9-->
-                                <div class="col-6 col-md-4 pb-3">
-                                    <div class="card" style="border: 0px;">
-                                        <div class="product-img-container">
-                                            <img class="card-img-top img-fluid" src="img/mantis-standin.jpg" alt="Mantis">
-                                            <a>
-                                                <div class="overlay">
-                                                    <span><button type="button" class="btn btn-light" 
-                                                        data-toggle="modal" data-target="#item-Modal">
-                                                        <i class="fa fa-search"></i> Quickview</button></span>
-                                               </div>
-                                            </a>
-                                        </div>
-                                        <div class="card-body">
-                                          <p class="card-text mb-0 item-name">Mantis Religiosa</p>
-                                          <p class="card-text"><small>$35.00</small></p>
+                                    <!-- image 8-->
+                                    <div class="col-6 col-md-4 pb-3">
+                                        <div class="card" style="border: 0px;">
+                                            <div class="product-img-container">
+                                                <img class="card-img-top img-fluid" src="img/mantis-standin.jpg" alt="Mantis">
+                                                <a>
+                                                    <div class="overlay">
+                                                        <span><button type="button" class="btn btn-light" 
+                                                            data-toggle="modal" data-target="#item-Modal">
+                                                            <i class="fa fa-search"></i> Quickview</button>
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="card-body">
+                                            <p class="card-text mb-0 item-name">Mantis Religiosa</p>
+                                            <p class="card-text"><small>$35.00</small></p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <!--image 10-->
-                                <div class="col-6 col-md-4 pb-3">
-                                    <div class="card" style="border: 0px;">
-                                        <div class="product-img-container">
-                                            <img class="card-img-top img-fluid" src="img/mantis-standin.jpg" alt="Mantis">
-                                            <a>
-                                                <div class="overlay">
-                                                    <span><button type="button" class="btn btn-light" 
-                                                        data-toggle="modal" data-target="#item-Modal">
-                                                        <i class="fa fa-search"></i> Quickview</button></span>
-                                               </div>
-                                            </a>
-                                        </div>
-                                        <div class="card-body">
-                                          <p class="card-text mb-0 item-name">Mantis Religiosa</p>
-                                          <p class="card-text"><small>$35.00</small></p>
+                                    <!-- image 9-->
+                                    <div class="col-6 col-md-4 pb-3">
+                                        <div class="card" style="border: 0px;">
+                                            <div class="product-img-container">
+                                                <img class="card-img-top img-fluid" src="img/mantis-standin.jpg" alt="Mantis">
+                                                <a>
+                                                    <div class="overlay">
+                                                        <span><button type="button" class="btn btn-light" 
+                                                            data-toggle="modal" data-target="#item-Modal">
+                                                            <i class="fa fa-search"></i> Quickview</button>
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="card-body">
+                                            <p class="card-text mb-0 item-name">Mantis Religiosa</p>
+                                            <p class="card-text"><small>$35.00</small></p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <!-- image 11-->
-                                <div class="col-6 col-md-4 pb-3">
-                                    <div class="card" style="border: 0px;">
-                                        <div class="product-img-container">
-                                            <img class="card-img-top img-fluid" src="img/mantis-standin.jpg" alt="Mantis">
-                                            <a>
-                                                <div class="overlay">
-                                                    <span><button type="button" class="btn btn-light" 
-                                                        data-toggle="modal" data-target="#item-Modal">
-                                                        <i class="fa fa-search"></i> Quickview</button></span>
-                                               </div>
-                                            </a>
-                                        </div>
-                                        <div class="card-body">
-                                          <p class="card-text mb-0 item-name">Mantis Religiosa</p>
-                                          <p class="card-text"><small>$35.00</small></p>
+                                    <!--image 10-->
+                                    <div class="col-6 col-md-4 pb-3">
+                                        <div class="card" style="border: 0px;">
+                                            <div class="product-img-container">
+                                                <img class="card-img-top img-fluid" src="img/mantis-standin.jpg" alt="Mantis">
+                                                <a>
+                                                    <div class="overlay">
+                                                        <span><button type="button" class="btn btn-light" 
+                                                            data-toggle="modal" data-target="#item-Modal">
+                                                            <i class="fa fa-search"></i> Quickview</button>
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="card-body">
+                                            <p class="card-text mb-0 item-name">Mantis Religiosa</p>
+                                            <p class="card-text"><small>$35.00</small></p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <!-- image 12 -->
-                                <div class="col-6 col-md-4 pb-3">
-                                    <div class="card" style="border: 0px;">
-                                        <div class="product-img-container">
-                                            <img class="card-img-top img-fluid" src="img/mantis-standin.jpg" alt="Mantis">
-                                            <a>
-                                                <div class="overlay">
-                                                    <span><button type="button" class="btn btn-light" 
-                                                        data-toggle="modal" data-target="#item-Modal">
-                                                        <i class="fa fa-search"></i> Quickview</button></span>
-                                               </div>
-                                            </a>
-                                        </div>
-                                        <div class="card-body">
-                                          <p class="card-text mb-0 item-name">Mantis Religiosa</p>
-                                          <p class="card-text"><small>$35.00</small></p>
+                                    <!-- image 11-->
+                                    <div class="col-6 col-md-4 pb-3">
+                                        <div class="card" style="border: 0px;">
+                                            <div class="product-img-container">
+                                                <img class="card-img-top img-fluid" src="img/mantis-standin.jpg" alt="Mantis">
+                                                <a>
+                                                    <div class="overlay">
+                                                        <span><button type="button" class="btn btn-light" 
+                                                            data-toggle="modal" data-target="#item-Modal">
+                                                            <i class="fa fa-search"></i> Quickview</button>
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="card-body">
+                                            <p class="card-text mb-0 item-name">Mantis Religiosa</p>
+                                            <p class="card-text"><small>$35.00</small></p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                            </div><!--end of row of items-->
-                        </div><!-- end of flex container with items-->
+                                    <!-- image 12 -->
+                                    <div class="col-6 col-md-4 pb-3">
+                                        <div class="card" style="border: 0px;">
+                                            <div class="product-img-container">
+                                                <img class="card-img-top img-fluid" src="img/mantis-standin.jpg" alt="Mantis">
+                                                <a>
+                                                    <div class="overlay">
+                                                        <span><button type="button" class="btn btn-light" 
+                                                            data-toggle="modal" data-target="#item-Modal">
+                                                            <i class="fa fa-search"></i> Quickview</button>
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="card-body">
+                                            <p class="card-text mb-0 item-name">Mantis Religiosa</p>
+                                            <p class="card-text"><small>$35.00</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div><!-- End row of products-->
+                            </div><!-- End flex container with products-->
                         
-                        </p><!--end of card text-->
-                    </div><!--end of card-body-->
-                  </div>
-              </div>
+                        </p><!-- End of card text-->
+                        </div><!-- End of card-body-->
+                    </div>
+              </div><!-- End row div-->
 
-            </div><!--end of videos div-->
+            </div><!-- End card div-->
+            <!-- Back to top button -->
             <a id="back-top" href="#top"><i class="fa fa-chevron-up"></i></a>
-        </div><!--end of body column div-->
-    </div>
-</div>
 
+        </div><!-- End of body container -->
+    </div><!-- End of row div-->
+</div><!-- End page container-->
+
+<!-- Start site footer-->
 <footer class="site-footer d-flex align-items-end">
     <div class="container-fluid mb-2">
         <div class="row">
@@ -699,10 +727,12 @@
        </div>
     </div>
 </footer>
+<!-- End site footer-->
 
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
 
 </body>
 </html>

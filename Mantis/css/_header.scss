@@ -1,5 +1,6 @@
 /*HEADER CUSTOM styles-------------------------------------------------------------------------*/
-@import "variables.scss";
+$light-gray: #f9f9f9;
+$almost-black: #202020; 
 
 a.website-name {                              /*CUSTOM container*/
     color:$almost-black;
@@ -13,5 +14,9 @@ a.website-name {                              /*CUSTOM container*/
 /*NAVBAR (top) styles---------------------------------------------------------------------------*/
 .navbar-nav{                                 /*add space after website logo*/
     padding:40px;
+}
+
+.navbar-collapse{
+    overflow-y: hidden;
 }
 

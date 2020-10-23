@@ -18,6 +18,8 @@
 </head>
 
 <body>
+
+<!-- Start top navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top">                    <!--NOTE: on lg and smaller, the toggler appears-->
     <div class="container-fluid">                                               <!--NOTE: fill the width of the entire page-->
         <a class="navbar-brand d-none d-lg-block" href="#"><img src="img/mantis_full.png" alt="mantis place logo" style="max-width:80px;"/></a>
@@ -50,98 +52,104 @@
         </div>
     </div>
 </nav>
+<!-- End top navbar -->
 
-
-<!-- The Modal -->
+<!-- Start shopping bag modal -->
 <div class="modal fade" id="shoppingModal" tabindex="-1" role="dialog" aria-labelledby="shoppingModal" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title">Shopping Cart</h1>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="row">
-              <div class="col-4">
-                  <div class="img-container">
-                      <img class="img-fluid img-thumbnail" src="img/mantis-standin.jpg" alt="Mantis Stand In Image">
-                      <a href="ITEM-PAGE.html">
-                          <div class="overlay">
-                              <span>View</span>
-                         </div>
-                      </a>
-                 </div>
-              </div>
-              <div class="col">
-                  <div class="row">Praying Mantis</div>
-                  <div class="row">$40.00</div>
-                  <div class="row">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h1 class="modal-title">Shopping Cart</h1>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+
+            <div class="modal-body">
+            <div class="row">
+                <div class="col-4">
+                    <div class="img-container">
+                        <img class="img-fluid img-thumbnail" src="img/mantis-standin.jpg" alt="Mantis Stand In Image">
+                        <a href="ITEM-PAGE.html">
+                            <div class="overlay">
+                                <span>View</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">Praying Mantis</div>
+                    <div class="row">$40.00</div>
+                    <div class="row">
+                        <button type="button" class="btn btn-sm btn-custom rounded-0">+</button>
+                        <button type="button" class="btn btn-sm rounded-0" style="border: 1px solid #59916d;">1</button>
+                        <button type="button" class="btn btn-sm btn-custom rounded-0">-</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4">
+                    <div class="img-container">
+                        <img class="img-fluid img-thumbnail" src="img/fruitfly-standin.jpg" alt="Fruit Stand In Image">
+                        <a href="ITEM-PAGE.html">
+                            <div class="overlay">
+                                <span>View</span>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">Fruit Flies</div>
+                    <div class="row">$10.00</div>
+                    <div class="row">
                     <button type="button" class="btn btn-sm btn-custom rounded-0">+</button>
                     <button type="button" class="btn btn-sm rounded-0" style="border: 1px solid #59916d;">1</button>
                     <button type="button" class="btn btn-sm btn-custom rounded-0">-</button>
-                  </div>
-              </div>
-          </div>
-
-          <div class="row">
-            <div class="col-4">
-                <div class="img-container">
-                    <img class="img-fluid img-thumbnail" src="img/fruitfly-standin.jpg" alt="Fruit Stand In Image">
-                    <a href="ITEM-PAGE.html">
-                        <div class="overlay">
-                            <span>View</span>
-                       </div>
-                    </a>
-               </div>
-            </div>
-            <div class="col">
-                <div class="row">Fruit Flies</div>
-                <div class="row">$10.00</div>
-                <div class="row">
-                  <button type="button" class="btn btn-sm btn-custom rounded-0">+</button>
-                  <button type="button" class="btn btn-sm rounded-0" style="border: 1px solid #59916d;">1</button>
-                  <button type="button" class="btn btn-sm btn-custom rounded-0">-</button>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="row">
-            <div class="col-4">
-                <div class="img-container">
-                    <img class="img-fluid img-thumbnail" src="img/fruitfly-standin.jpg" alt="Fruit Fly Stand In Image">
-                    <a href="ITEM-PAGE.html">
-                        <div class="overlay">
-                            <span>View</span>
-                       </div>
-                    </a>
-               </div>
-            </div>
-            <div class="col">
-                <div class="row">Containers</div>
-                <div class="row">$5.00</div>
-                <div class="row">
-                  <button type="button" class="btn btn-sm btn-custom rounded-0">+</button>
-                  <button type="button" class="btn btn-sm rounded-0" style="border: 1px solid #59916d;">1</button>
-                  <button type="button" class="btn btn-sm btn-custom rounded-0">-</button>
+            <div class="row">
+                <div class="col-4">
+                    <div class="img-container">
+                        <img class="img-fluid img-thumbnail" src="img/fruitfly-standin.jpg" alt="Fruit Fly Stand In Image">
+                        <a href="ITEM-PAGE.html">
+                            <div class="overlay">
+                                <span>View</span>
+                        </div>
+                        </a>
+                </div>
+                </div>
+                <div class="col">
+                    <div class="row">Containers</div>
+                    <div class="row">$5.00</div>
+                    <div class="row">
+                    <button type="button" class="btn btn-sm btn-custom rounded-0">+</button>
+                    <button type="button" class="btn btn-sm rounded-0" style="border: 1px solid #59916d;">1</button>
+                    <button type="button" class="btn btn-sm btn-custom rounded-0">-</button>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        </div>
-        <div class="modal-footer">
-            <div class="col-8">
-                <strong>Subtotal: $55.00</strong>
             </div>
-            <div class="col">
-                <button type="button" class="btn btn-custom rounded-0" style="width:100%">View Cart</button>
+
+            <div class="modal-footer">
+                <div class="col-8">
+                    <strong>Subtotal: $55.00</strong>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-custom rounded-0" style="width:100%">View Cart</button>
+                </div>
             </div>
-        </div>
-      </div>
-    </div>
+
+        </div> <!-- End modal content-->
+    </div> <!-- End modal dialog-->
 </div>
+<!-- End shopping bag modal -->
 
+<!-- Start page container -->
 <div class="container-fluid">
     <div class="row">                                                           <!--CUSTOM CLASS: sidebar-container-->
         <div class="d-none d-lg-block sidebar-container">                       <!--NOTE: make sidebar disappear at lg and smaller viewports-->
@@ -353,42 +361,48 @@
                     </div>
                 </div>
 
-            </div> <!--end of accordion-->
-        </div><!--end of sidebar navigation div-->
+            </div> <!-- End of accordion-->
+        </div>
+        <!-- End of sidebar navigation div-->
 
+        <!-- Start body container -->
         <div class="col-12 col-md body-container">
             <div class="card">
                 <div class="row no-gutters">
-                  <div class="col-sm">
-                    <div class="card-body" style="padding: 5px;">
-                      <h1 class="card-title">Welcome!</h1>
-                      <p class="card-text">
-                            Since 2006, Mantis Place has had the longest online and largest selection
-                            of Praying Mantis Pets available in the world!<br /><br />
-                                        
-                            I supplied the original owner of the site, as he had another business this was a part time hobby for 
-                            him. When it quickly caught on, he became too busy to continue and sold it to me. I have loved my business
-                            at the onset and continue to today. Praying mantises are unique pets for people of all ages and walks of
-                            life. I never heard of anyone getting them and not liking them or being afraid of them. People simply
-                            love them and their attitudes! Try one, as the saying goes - you will like them.<br /><br />
+                    <div class="col-sm">
 
-                            Shortly after taking over the business, I had to trademark the "Mystery Mantis" as sometimes the little 
-                            guys would get loose and it was hard to tell one from another. That's how the mystery mantis came about!
-                        </p>
-                    </div><!--end of card-body-->
-                  </div>
-                  <div class="col-sm-6 align-self-center" style="padding: 5px;">
-                    <img src="img/mantis_galore.png" class="card-img-top" alt="Mantises on a log">
-                  </div>
+                        <div class="card-body" style="padding: 5px;">
+                            <h1 class="card-title">Welcome!</h1>
+                            <p class="card-text">
+                                Since 2006, Mantis Place has had the longest online and largest selection
+                                of Praying Mantis Pets available in the world!<br /><br />
+                                            
+                                I supplied the original owner of the site, as he had another business this was a part time hobby for 
+                                him. When it quickly caught on, he became too busy to continue and sold it to me. I have loved my business
+                                at the onset and continue to today. Praying mantises are unique pets for people of all ages and walks of
+                                life. I never heard of anyone getting them and not liking them or being afraid of them. People simply
+                                love them and their attitudes! Try one, as the saying goes - you will like them.<br /><br />
+
+                                Shortly after taking over the business, I had to trademark the "Mystery Mantis" as sometimes the little 
+                                guys would get loose and it was hard to tell one from another. That's how the mystery mantis came about!
+                            </p>
+                        </div><!-- End of card-body-->
+                    </div>
+
+                    <div class="col-sm-6 align-self-center" style="padding: 5px;">
+                        <img src="img/mantis_galore.png" class="card-img-top" alt="Mantises on a log">
+                    </div>
+
                 </div>
-              </div><!--end of card div-->
+            </div><!-- End of card div-->
+        </div><!-- End body container -->
+    </div><!-- End of row div-->
+</div><!-- End page container-->
 
-        </div><!--end of body column div-->
-
-    </div><!--end of row div-->
-</div><!-- end of container-fluid-->
+<!-- Back to top button -->
 <a id="back-top" href="#top"><i class="fa fa-chevron-up d-block d-sm-none"></i></a>
 
+<!-- Start site footer -->
 <footer class="site-footer d-flex align-items-end">
     <div class="container-fluid mb-2">
         <div class="row">
@@ -405,6 +419,7 @@
        </div>
     </div>
 </footer>
+<!-- End site footer-->
 
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>

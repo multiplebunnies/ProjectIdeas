@@ -1,5 +1,24 @@
+/*product modal to stop y-overflow---------------------------------------------------------------------*/
+.modal-product-body{
+    overflow-y: hidden;
+    text-align: justify;
+    font-size: .8rem;
+}
+
+.modal-item-name{
+    font-size: 1rem;
+}
+
+.product-modal{
+    .modal-dialog,
+    .modal-content {
+        height: 75%;
+    }
+}
+
+
 /*products container image overlay---------------------------------------------------------------------*/
-.product-img-container{
+.product-img-container{             /*CUSTOM container*/
     position:relative;
     display:inline-block;
 }
@@ -28,23 +47,4 @@
     left: 50%;
     transform: translate(-50%,-50%);
     color:black;
-}
-
-/*item modal to stop y-overflow---------------------------------------------------------------------*/
-.modal-product-body{
-    overflow-y: hidden;
-    text-align: justify;
-    font-size: .8rem;
-}
-
-.modal-item-name{
-    font-size: 1rem;
-}
-
-.product-modal{
-    .modal-dialog,
-    .modal-content {
-    /* 80% of window height */
-    height: 75%;
-}
 }
