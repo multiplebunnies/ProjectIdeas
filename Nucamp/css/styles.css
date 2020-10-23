@@ -1,0 +1,59 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  /*sans serif if open sans doesn't work*/ }
+
+h1, h2, h3 {
+  /*css rule for these selectors to be a certain font (or fallback font if it doesn't work*/
+  font-family: "Lobster", cursive; }
+
+h2 {
+  /*h2 elements selector style below*/
+  color: #3046C5; }
+
+header h2 {
+  /*targets h2 element in the header*/
+  color: #CEC8FF; }
+
+.site-footer {
+  /*had to change to site footer because a footer was referenced in the quote on the contact page*/
+  background-image: linear-gradient(#CEC8FF, white);
+  padding: 20px 0;
+  /*20px on top and bottom padding; 0 padding for left and right sides*/ }
+
+.jumbotron {
+  /*custom rules for jumbotron, a bootstrap defined class*/
+  margin: 0;
+  /*to get rid of space between navbar and jubotron class*/
+  padding: 30px;
+  /*all four sides*/
+  background-image: linear-gradient(to right, #5637dd, #3046C5, #60106b);
+  color: white;
+  /*main font color is now white*/ }
+
+.row-content {
+  /*custom class, adding rules*/
+  padding: 50px 0;
+  /*50 px on top and bottom, 0 px on left and right*/
+  border-bottom: 1px ridge;
+  min-height: 200px; }
+
+.navbar-dark {
+  background-color: #901CAD; }
+
+/*custom styles for the carousel captions*/
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+/*rgba gives aaccess to the alpha channel
+                                        /*first three numbers is the color (0,0,0)
+                                        /*last number is alpha channel: 1 = 100% opacity*/
+/*custon styles for carousel border*/
+.carousel {
+  border: solid #5637dd; }
+
+#carouselButton {
+  /*using the id to change carousel buttons position*/
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 100; }

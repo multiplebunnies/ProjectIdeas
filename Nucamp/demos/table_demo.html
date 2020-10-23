@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <title>Bootstrap Table Demo</title>
+</head>
+<body>
+    <div class="table-responsive"> <!--boostrap: if screen to small, horizontal bar appears below table to scroll, rather than at bottom of page-->
+    <table class="table table-striped table-bordered"> <!--table tags <table>--><!--bootstrap table class is the class="table"-->
+        <thead class="thead-dark"><!--to set apart header--><!--boostrap thread-dark makes header dark-->
+            <tr> <!-- table row-->
+                <th><!--table data elements--> <!--originally td, but because in header, th-->
+                    Breakpoint
+                </th>
+                <th><!--another single cell table data element-->
+                    Extra Small
+                </th>
+                <th>
+                    Small
+                </th>
+                <th>
+                    Medium
+                </th>
+                <th>
+                    Large
+                </th>
+                <th>
+                Extra Large 
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>
+                    Viewport Width
+                </td>
+                <td>
+                    &lt;576px <!--html character entity, &lt. Means less than-->
+                </td>
+                <td>
+                    &ge;576px<!--html character entity. Means greater than or equal to-->
+                </td>
+                <td>
+                    &ge;768px
+                </td>
+                <td>
+                    &ge;992px
+                </td>
+                <td>
+                    &ge;1200px
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Column Class Prefix
+                </td>
+                <td>
+                    .col-xs
+                </td>
+                <td>
+                    .col-sm
+                </td>
+                <td>
+                    .col-md
+                </td>
+                <td>
+                    .col-lg
+                </td>
+                <td>
+                    .col-xl
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+
+
+</body>
+</html>
