@@ -1,0 +1,88 @@
+/*MODAL styles----------------------------------------------------------------------------------*/
+@import "variables.scss";
+
+.modal-open{
+    padding:0 !important;                   /*the modal.body behavior pushes everything to the right...*/
+    overflow-y: auto;                       /*this stops it from doing that*/
+}
+
+.modal-header{
+    background-color: $bright-green;
+}
+
+.modal-footer{
+    padding: 0;
+    background-color: $light-gray;
+}
+
+/*CUSTOM MEDIA QUERY for shopping bag------------------------------------------------------------*/
+@media only screen and (min-width: 992px){   /*CUSTOM container*/
+    .shopping-bag {
+        position: absolute;
+        top: 50px;
+        right:30px;
+    }
+}
+
+@media only screen and (min-width: 992px){   /*stop default modal behavor from pushing this to the right*/
+    .modal-open{
+        .shopping-bag {
+            position: absolute;
+            top: 50px;
+            right:45px;
+        }
+    }
+}
+
+/*modal container image overlay---------------------------------------------------------------------*/
+.img-container{
+    position:relative;
+    display:inline-block;
+}
+
+.img-container img{
+    display:block
+}
+
+.img-container .overlay{
+    position:absolute;
+    top: 5px;
+    left: 5px;
+    width: 93%;
+    height: 93%;
+    background:rgba(121, 165, 165, 0.5);
+    opacity: 0;
+    transition: opacity 450ms ease-in-out;
+}
+.img-container:hover .overlay{
+    opacity:1;
+}
+
+.overlay span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color:black;
+}
+
+/*Modal Scroll------------------------------------------------------------------------------*/
+.modal-dialog,
+.modal-content {
+    /* 80% of window height */
+    height: 80.3%;
+}
+
+.modal-body {
+    /* 100% = dialog height, 120px = header + footer */
+    max-height: calc(100% - 120px);
+    overflow-y: scroll;
+}
+
+@media only screen and (max-width: 575.98px){   /*CUSTOM container*/
+    .modal-dialog,
+    .modal-content {
+        /* 80% of window height */
+        height: 95%;
+    }
+}

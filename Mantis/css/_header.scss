@@ -15,38 +15,3 @@ a.website-name {                              /*CUSTOM container*/
     padding:40px;
 }
 
-/*MODAL styles----------------------------------------------------------------------------------*/
-.modal-open{
-    padding:0 !important;                   /*the modal.body behavior pushes everything to the right...*/
-    overflow-y: auto;                       /*this stops it from doing that*/
-}
-
-.modal-header{
-    background-color: $bright-green;
-}
-
-.modal-footer{
-    padding: 0;
-    background-color: $light-gray;
-}
-
-/*CUSTOM MEDIA QUERY for shopping bag------------------------------------------------------------*/
-@media only screen and (min-width: 992px){   /*CUSTOM container*/
-    .shopping-bag {
-        position: absolute;
-        top: 50px;
-        right:30px;
-    }
-}
-
-@media only screen and (min-width: 992px){   /*stop default modal behavor from pushing this to the right*/
-    .modal-open{
-        .shopping-bag {
-            position: absolute;
-            top: 50px;
-            right:45px;
-        }
-    }
-}
-
-

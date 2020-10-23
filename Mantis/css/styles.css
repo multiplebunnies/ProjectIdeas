@@ -31,6 +31,10 @@
     .show > .btn-custom.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(114, 162, 131, 0.5); }
 
+.btn-custom:focus, .btn-custom:active:focus, .btn-custom.active:focus {
+  outline: none !important;
+  box-shadow: none !important; }
+
 /*button-variant($background, $border, 
 $hover-background: darken($background, 10%), 
 $hover-border: darken($border, 10%), 
@@ -80,6 +84,10 @@ h1 {
     .show > .btn-custom.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(114, 162, 131, 0.5); }
 
+.btn-custom:focus, .btn-custom:active:focus, .btn-custom.active:focus {
+  outline: none !important;
+  box-shadow: none !important; }
+
 /*button-variant($background, $border, 
 $hover-background: darken($background, 10%), 
 $hover-border: darken($border, 10%), 
@@ -118,6 +126,10 @@ $active-border: darken($border, 12.5%))*/
     .show > .btn-custom.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(114, 162, 131, 0.5); }
 
+.btn-custom:focus, .btn-custom:active:focus, .btn-custom.active:focus {
+  outline: none !important;
+  box-shadow: none !important; }
+
 /*button-variant($background, $border, 
 $hover-background: darken($background, 10%), 
 $hover-border: darken($border, 10%), 
@@ -137,6 +149,47 @@ a.website-name {
   padding: 40px; }
 
 /*MODAL styles----------------------------------------------------------------------------------*/
+/*variables ---------------------------------------------------------------------------------------------*/
+/* header and footer background */
+/* navbar card headers backgrounds; HOVER font color: navbar, header Mantis */
+/* header, card header, and card body fonts */
+/*button ------------------------------------------------------------------------------------------------*/
+.btn-custom {
+  color: #fff;
+  background-color: #59916d;
+  border-color: #59916d;
+  color: #fff; }
+  .btn-custom:hover {
+    color: #fff;
+    background-color: #4a795b;
+    border-color: #467155; }
+  .btn-custom:focus, .btn-custom.focus {
+    color: #fff;
+    background-color: #4a795b;
+    border-color: #467155;
+    box-shadow: 0 0 0 0.2rem rgba(114, 162, 131, 0.5); }
+  .btn-custom.disabled, .btn-custom:disabled {
+    color: #fff;
+    background-color: #59916d;
+    border-color: #59916d; }
+  .btn-custom:not(:disabled):not(.disabled):active, .btn-custom:not(:disabled):not(.disabled).active,
+  .show > .btn-custom.dropdown-toggle {
+    color: #fff;
+    background-color: #467155;
+    border-color: #41694f; }
+    .btn-custom:not(:disabled):not(.disabled):active:focus, .btn-custom:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-custom.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(114, 162, 131, 0.5); }
+
+.btn-custom:focus, .btn-custom:active:focus, .btn-custom.active:focus {
+  outline: none !important;
+  box-shadow: none !important; }
+
+/*button-variant($background, $border, 
+$hover-background: darken($background, 10%), 
+$hover-border: darken($border, 10%), 
+$active-background: darken($background, 10%), 
+$active-border: darken($border, 12.5%))*/
 .modal-open {
   padding: 0 !important;
   /*the modal.body behavior pushes everything to the right...*/
@@ -164,6 +217,52 @@ a.website-name {
     position: absolute;
     top: 50px;
     right: 45px; } }
+
+/*modal container image overlay---------------------------------------------------------------------*/
+.img-container {
+  position: relative;
+  display: inline-block; }
+
+.img-container img {
+  display: block; }
+
+.img-container .overlay {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 93%;
+  height: 93%;
+  background: rgba(121, 165, 165, 0.5);
+  opacity: 0;
+  transition: opacity 450ms ease-in-out; }
+
+.img-container:hover .overlay {
+  opacity: 1; }
+
+.overlay span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black; }
+
+/*Modal Scroll------------------------------------------------------------------------------*/
+.modal-dialog,
+.modal-content {
+  /* 80% of window height */
+  height: 80.3%; }
+
+.modal-body {
+  /* 100% = dialog height, 120px = header + footer */
+  max-height: calc(100% - 120px);
+  overflow-y: scroll; }
+
+@media only screen and (max-width: 575.98px) {
+  /*CUSTOM container*/
+  .modal-dialog,
+  .modal-content {
+    /* 80% of window height */
+    height: 95%; } }
 
 /*body container styling---------------------------------------------------------------------*/
 /*variables ---------------------------------------------------------------------------------------------*/
@@ -197,6 +296,10 @@ a.website-name {
     .btn-custom:not(:disabled):not(.disabled):active:focus, .btn-custom:not(:disabled):not(.disabled).active:focus,
     .show > .btn-custom.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(114, 162, 131, 0.5); }
+
+.btn-custom:focus, .btn-custom:active:focus, .btn-custom.active:focus {
+  outline: none !important;
+  box-shadow: none !important; }
 
 /*button-variant($background, $border, 
 $hover-background: darken($background, 10%), 
@@ -240,6 +343,10 @@ $active-border: darken($border, 12.5%))*/
     .btn-custom:not(:disabled):not(.disabled):active:focus, .btn-custom:not(:disabled):not(.disabled).active:focus,
     .show > .btn-custom.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(114, 162, 131, 0.5); }
+
+.btn-custom:focus, .btn-custom:active:focus, .btn-custom.active:focus {
+  outline: none !important;
+  box-shadow: none !important; }
 
 /*button-variant($background, $border, 
 $hover-background: darken($background, 10%), 
@@ -321,6 +428,10 @@ $active-border: darken($border, 12.5%))*/
     .show > .btn-custom.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(114, 162, 131, 0.5); }
 
+.btn-custom:focus, .btn-custom:active:focus, .btn-custom.active:focus {
+  outline: none !important;
+  box-shadow: none !important; }
+
 /*button-variant($background, $border, 
 $hover-background: darken($background, 10%), 
 $hover-border: darken($border, 10%), 
@@ -339,11 +450,11 @@ $active-border: darken($border, 12.5%))*/
   color: white; }
 
 /*SCROLL UP ---------------------------------------------------------------------------------------*/
-.scrollUp .fa {
-  color: gray; }
-
-.scrollUp .fa p {
-  font-family: "Raleway", sans-serif; }
-
-.scrollUp .fa:hover {
-  color: #202020; }
+#back-top {
+  position: relative;
+  font-size: 50px;
+  color: rgba(0, 0, 0, 0.5);
+  bottom: 0%;
+  left: 45%;
+  width: auto;
+  text-decoration: none; }

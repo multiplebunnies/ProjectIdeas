@@ -16,18 +16,12 @@
 }
 
 /*SCROLL UP ---------------------------------------------------------------------------------------*/
-.scrollUp {
-    .fa {
-        color: gray;
-    }
-
-    .fa {
-        p {
-            font-family: "Raleway", sans-serif;
-        }
-    }
-
-    .fa:hover{
-        color: $almost-black;
-    }
+#back-top {
+    position: relative;  
+    font-size: 50px;
+    color: rgba(0,0,0,0.5);
+    bottom: 0%; 
+    left: 45%; 
+    width:auto;
+    text-decoration: none;
 }

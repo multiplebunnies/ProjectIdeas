@@ -10,6 +10,11 @@ $almost-black: #202020;   /* header, card header, and card body fonts */
     color: #fff;
 }
 
+.btn-custom:focus, .btn-custom:active:focus, .btn-custom.active:focus{
+    outline:none !important;
+    box-shadow:none !important;
+}
+
 /*button-variant($background, $border, 
 $hover-background: darken($background, 10%), 
 $hover-border: darken($border, 10%), 
