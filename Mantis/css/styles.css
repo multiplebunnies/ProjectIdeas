@@ -264,6 +264,48 @@ $active-border: darken($border, 12.5%))*/
     /* 80% of window height */
     height: 95%; } }
 
+/*products container image overlay---------------------------------------------------------------------*/
+.product-img-container {
+  position: relative;
+  display: inline-block; }
+
+.product-img-container img {
+  display: block; }
+
+.product-img-container .overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(121, 165, 165, 0.5);
+  opacity: 0;
+  transition: opacity 450ms ease-in-out; }
+
+.product-img-container:hover .overlay {
+  opacity: 1; }
+
+.product-overlay span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black; }
+
+/*item modal to stop y-overflow---------------------------------------------------------------------*/
+.modal-product-body {
+  overflow-y: hidden;
+  text-align: justify;
+  font-size: .8rem; }
+
+.modal-item-name {
+  font-size: 1rem; }
+
+.product-modal .modal-dialog,
+.product-modal .modal-content {
+  /* 80% of window height */
+  height: 75%; }
+
 /*body container styling---------------------------------------------------------------------*/
 /*variables ---------------------------------------------------------------------------------------------*/
 /* header and footer background */
@@ -311,7 +353,6 @@ $active-border: darken($border, 12.5%))*/
   min-height: 500px;
   padding: 15px; }
 
-/*new breakpints for products page grid----------------------------------*/
 /*SIDEBAR CUSTOM container and cards styling--------------------------------------------------------------*/
 /*variables ---------------------------------------------------------------------------------------------*/
 /* header and footer background */
