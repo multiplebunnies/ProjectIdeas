@@ -1,3 +1,4 @@
+$color-teal: #17A2B8;
 $color-primary: #3046C5;
 $color-secondary: #5637dd;
 $color-pale: #CEC8FF;
@@ -66,3 +67,20 @@ header {
     bottom: 0;
     z-index: 100;
 }
+
+
+/*new class for modal styles*/
+#reserveModal{
+    .modal-header{
+        color: white;
+        background-color: $color-teal;
+    }
+}
+
+#loginModal{
+    .modal-header{
+        color: white;
+        background-color: $color-mid;
+    }
+}
+

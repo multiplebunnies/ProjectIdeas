@@ -57,3 +57,12 @@ header h2 {
   right: 0;
   bottom: 0;
   z-index: 100; }
+
+/*new class for modal styles*/
+#reserveModal .modal-header {
+  color: white;
+  background-color: #17A2B8; }
+
+#loginModal .modal-header {
+  color: white;
+  background-color: #901CAD; }

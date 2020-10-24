@@ -28,7 +28,7 @@
                     <h2>a better way to camp</h2>
                 </div>
                 <div class="col-md-4 col-xl-2 align-self-center">
-                    <a type="button" role="button" class="btn btn-info btn-lg mt-4" data-toggle="modal" data-target="#reserveModal">Reserve Campsite</a>
+                    <a type="button" role="button" class="btn btn-info btn-lg mt-4" id="reserveButton">Reserve Campsite</a>
                 </div>
             </div>
         </div>
@@ -38,7 +38,7 @@
     <div id="reserveModal" class="modal fade" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-header bg-info text-white">
+                <div class="modal-header">
                     <h3 class="modal-title" >Reserve a Campsite</h3>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
@@ -84,7 +84,7 @@
         </div>
     </div>
     
-
+    
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top"> <!--navbar is base class for the navbar component-->
         <div class="container">
             <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30"/></a>
@@ -99,7 +99,7 @@
                     <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
                 </ul>
                 <span class="navbar-text ml-auto">
-                    <a role="button" data-toggle="modal" data-target="#loginModal">
+                    <a role="button" id="loginButton">
                         <i class="fa fa-sign-in"></i> Login
                     </a>
                 </span>
@@ -111,7 +111,7 @@
     <div id="loginModal" class="modal fade" role="dialog"> <!-- fade gives face affect when opens and closes-->
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-header bg-info text-white">
+                <div class="modal-header">
                     <h3 class="modal-title"> Login</h3>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
