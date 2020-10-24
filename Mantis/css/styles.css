@@ -218,6 +218,10 @@ a.website-name {
   transform: translate(-50%, -50%);
   color: black; }
 
+/*styling for the product page of one item!---------------------------------------------*/
+.product-name {
+  font-family: "Raleway", sans-serif; }
+
 /*BODY container styling---------------------------------------------------------------------*/
 .body-container {
   /*CUSTOM container: to give min height*/
