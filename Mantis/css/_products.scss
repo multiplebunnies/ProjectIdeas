@@ -19,16 +19,16 @@
 
 /*products container image overlay---------------------------------------------------------------------*/
 .product-img-container{             /*CUSTOM container*/
-    position:relative;
-    display:inline-block;
+    position: relative;
+    display: inline-block;
 }
 
 .product-img-container img{
-    display:block
+    display: block
 }
 
 .product-img-container .overlay{
-    position:absolute;
+    position: absolute;
     top: 0px;
     left: 0px;
     width: 100%;
@@ -46,5 +46,5 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    color:black;
+    color: black;
 }
