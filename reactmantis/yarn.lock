@@ -11249,6 +11249,11 @@ typeface-aladin@^1.1.13:
   resolved "https://registry.yarnpkg.com/typeface-aladin/-/typeface-aladin-1.1.13.tgz#5e88c30881d56c586607e1ed2ee16a8caf534a0b"
   integrity sha512-hpoIEApWgsQE5VdbLFocj/dmw6FZyAS3Oew8GQlrX8bjmdnu4w17NYkskXR1AzbQALeeWuzbL3SAnDKrpMOZ2Q==
 
+typeface-raleway@^1.1.13:
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/typeface-raleway/-/typeface-raleway-1.1.13.tgz#5dd44c7029c69991f3e8a66f4434ba62bcf0886a"
+  integrity sha512-iouV4D1dv4Ylm++j2PmPW7HKJH7zTKu5xXsta1hqQ2oG8+9fSpocuF40xCSTckaa1DLYbk1TUiU14wr2nCUBqg==
+
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/unicode-canonical-property-names-ecmascript/-/unicode-canonical-property-names-ecmascript-1.0.4.tgz#2619800c4c825800efdd8343af7dd9933cbe2818"
