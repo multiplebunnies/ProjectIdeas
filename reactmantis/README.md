@@ -1,18 +1,19 @@
 # Mantis Place redesign
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It was created in bootstrap and now being reworked for react and reactstrap.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Project is now being reworked for react and reactstrap.
 
-## Done (Dec 3, 2020)
-* Fixed reactstrap classes
-* Added css styling
-* Shopping modal works (breakpoint added)
-* NOTE: Shopping bag is NOT yet a modal
+## Done (Dec 4, 2020)
+* Added shopping modal works (breakpoint added)
+* Rewrote navbar to include bind method, as was taught*
+
+## Issues
+* Problems installing node-sass@4.14.1, and any version of it
 
 ## To Do (shorter term)
 * Accordion (difficult to implement)
 * Card is where the data will be stored beside the accordion sidebar nav
-* Make shopping bag into a modal (without state just yet)
+* Get sass working
 
 ## Longer Term
 * Add React-Router
-* Add React-Redux
 * Use SCSS for formatting
+* Add React Redux much later
