@@ -1,17 +1,16 @@
 import React from 'react';
+import { Card, CardText, CardBody } from 'reactstrap';
 
-function Footer(props) {
-    
+function Sidebar() {
     return (
-        <div className="container">
-            <div className="row">             
-                <div className="col text-center">
-                    <p>This is just filler info</p>
-                    <p>Apparently, making accordions is difficult.</p>
-                </div>
-            </div>
-        </div>
+        <Card>
+            <CardBody>
+                <CardText>
+                Placeholder for accordion-card navigation.
+                </CardText>
+            </CardBody>
+        </Card>
     );
 }
 
-export default Footer;
+export default Sidebar;

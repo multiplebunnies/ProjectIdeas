@@ -90,7 +90,7 @@ class Header extends Component {
                         </Collapse>
                     </div>
                 </Navbar>
-                <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
+                <Modal centered isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
                     <ModalHeader toggle={this.toggleModal}>Shopping Cart</ModalHeader>
                     <ModalBody>More text here later.</ModalBody>
                 </Modal>
