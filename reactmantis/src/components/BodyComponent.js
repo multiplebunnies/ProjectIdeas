@@ -1,16 +1,32 @@
 import React from 'react';
-import { Card, CardTitle, CardText, CardBody } from 'reactstrap';
+import { Card, CardText, CardSubtitle, CardBody, CardImg } from 'reactstrap';
 
-function Body() {
+function RenderCard({mantis}) {
     return (
-        <Card>
+        <Card className="pl-4 pt-3">
+            <CardImg src={mantis.image} alt={mantis.name}/>
             <CardBody>
-                <CardTitle><h1>Card Title</h1></CardTitle>
-                <CardText>
-                This is where the content will eventually be.
-                </CardText>
+                <CardSubtitle>{mantis.name}</CardSubtitle>
+                <CardText>${mantis.price}</CardText>
             </CardBody>
         </Card>
+    );
+}
+
+
+function Body(props) {
+    const mantis = props.mantises.map(mantis => {
+        return (
+            <div key={mantis.id}>
+                <RenderCard mantis={mantis} />
+            </div>
+        );
+    });
+
+    return (
+        <>
+            {mantis}
+        </>
     );
 }
 

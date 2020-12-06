@@ -4,9 +4,21 @@ import Footer from './FooterComponent';
 import Body from './BodyComponent';
 import Sidebar from './SidebarComponent';
 import { Col, Row} from 'reactstrap';
+import { MANTISES } from '../shared/mantises';
 
+//first want mantis info saved in state
 class Main extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            mantises: MANTISES,
+        };
+    }
+
+
     render () {
+
+
         return (
             <React.Fragment>
                 <Header />
@@ -16,7 +28,7 @@ class Main extends Component {
                             <Sidebar />
                         </Col>
                         <Col className="pl-0">
-                            <Body />
+                            <Body mantises={this.state.mantises}/>
                         </Col>
                     </Row>
                 </div>
