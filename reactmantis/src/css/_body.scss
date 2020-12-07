@@ -1,0 +1,13 @@
+.mantis-image {
+    height: 150px;
+    width: 155px;
+}
+
+//media query so that mentises is slightly to right on smaller screens
+@media only screen and (max-width: 992px){
+    .title-container {
+        position: relative;
+        top: 0px;
+        left:5px;
+    }
+  }

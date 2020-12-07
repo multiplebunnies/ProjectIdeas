@@ -1,10 +1,10 @@
 import React from 'react';
-import { Card, CardText, CardSubtitle, CardBody, Col, Row, CardImg } from 'reactstrap';import MantisStandin from '../images/mantis_standin.jpg';
+import { Card, CardText, CardSubtitle, CardBody, Col, Row, CardImg } from 'reactstrap';
 
 function RenderCard( {mantis} ) {
     return (
         <Card className="pl-3 pt-3 rounded-0">
-            <CardImg src={mantis.image} alt={mantis.name}/>
+            <CardImg src={mantis.image} className="mantis-image" alt={mantis.name}/>
             <CardBody>
                 <CardSubtitle>{mantis.name} {mantis.age}</CardSubtitle>
                 <CardText>${mantis.price}</CardText>
