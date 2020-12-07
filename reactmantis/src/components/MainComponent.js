@@ -6,7 +6,6 @@ import Sidebar from './SidebarComponent';
 import { Col, Row} from 'reactstrap';
 import { MANTISES } from '../shared/mantises';
 
-//first want mantis info saved in state
 class Main extends Component {
     constructor(props) {
         super(props);
@@ -15,19 +14,16 @@ class Main extends Component {
         };
     }
 
-
     render () {
-
-
         return (
             <React.Fragment>
                 <Header />
                 <div>
                     <Row>
-                        <Col xs={4} className="d-none d-lg-block pr-0">
+                        <Col xs={4} className="d-none d-lg-block">
                             <Sidebar />
                         </Col>
-                        <Col className="pl-0">
+                        <Col>
                             <Body mantises={this.state.mantises}/>
                         </Col>
                     </Row>
