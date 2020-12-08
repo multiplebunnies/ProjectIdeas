@@ -1,13 +1,32 @@
 .mantis-image {
-    height: 150px;
-    width: 155px;
+    padding: 10px 19px 0px 19px;
 }
 
+.mantis-name {
+    font-size: 15px;
+}
+
+.mantis-price {
+    font-size: 13px;
+}
+
+.the-col {
+    border: 1px solid black;
+}
 //media query so that mentises is slightly to right on smaller screens
 @media only screen and (max-width: 992px){
-    .title-container {
+.title-container {
         position: relative;
         top: 0px;
         left:5px;
     }
-  }
+}
+
+//check what is going on...
+// .the-top {
+//     border: 1px solid red;
+// }
+
+// .the-row {
+//     border: 1px solid red;
+// }

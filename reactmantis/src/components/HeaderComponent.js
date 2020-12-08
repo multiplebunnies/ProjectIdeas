@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Logo from '../images/mantis_full.png';
+import Logo from '../shared/mantis_full.png';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink,
         Modal, ModalHeader, ModalBody } from 'reactstrap';         //^ will delete this later when doing react router dom
 //import { NavLink } from 'react-router-dom';                         

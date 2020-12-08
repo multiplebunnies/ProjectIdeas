@@ -5,12 +5,14 @@ import Body from './BodyComponent';
 import Sidebar from './SidebarComponent';
 import { Col, Row} from 'reactstrap';
 import { MANTISES } from '../shared/mantises';
+import { HEADERS } from '../shared/sidebarnav';
 
 class Main extends Component {
     constructor(props) {
         super(props);
         this.state = {
             mantises: MANTISES,
+            headers: HEADERS
         };
     }
 
@@ -21,7 +23,7 @@ class Main extends Component {
                 <div>
                     <Row>
                         <Col xs={4} className="d-none d-lg-block">
-                            <Sidebar />
+                            <Sidebar headers={this.state.headers}/>
                         </Col>
                         <Col>
                             <Body mantises={this.state.mantises}/>

@@ -1,13 +1,13 @@
 import React from 'react';
-import { Card, CardText, CardSubtitle, CardBody, Col, Row, CardImg } from 'reactstrap';
+import { Card, CardText, CardSubtitle, CardBody, CardImg, Col, Row } from 'reactstrap';
 
 function RenderCard( {mantis} ) {
     return (
-        <Card className="pl-3 pt-3 rounded-0">
+        <Card className="h-100 rounded-0">
             <CardImg src={mantis.image} className="mantis-image" alt={mantis.name}/>
             <CardBody>
-                <CardSubtitle>{mantis.name} {mantis.age}</CardSubtitle>
-                <CardText>${mantis.price}</CardText>
+                <CardSubtitle className="mantis-name">{mantis.name}</CardSubtitle>
+                <CardText className="mantis-price">${mantis.price}</CardText>
             </CardBody>
         </Card>
     );
@@ -24,8 +24,9 @@ function Body(props) {
 
     return (
         <React.Fragment>
-            <Row>
-                <Col className="mt-2 title-container">
+
+            <Row className="mr-0 ml-0 the-top">
+                <Col className="mt-2 ml-0 pl-0 title-container">
                     <h1>Mantises</h1>
                 </Col>
                 <Col> {/*This will eventually be a react redux dropdown */}
@@ -40,9 +41,13 @@ function Body(props) {
                 </form>
                 </Col>
             </Row>
-            <div className="pr-1 pl-1">
-                {mantis}
-            </div>
+
+            <Col>
+                <Row xs={2} sm={3} md={4} className="d-flex flex-fill h-100 the-row">
+                    {mantis}
+                </Row>
+            </Col>
+
         </React.Fragment>
     );
 }
