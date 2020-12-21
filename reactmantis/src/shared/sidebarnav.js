@@ -2,27 +2,27 @@ export const HEADERS = [
     {
         id: 0,
         name: 'Home',
-        subtitle:''
+        subtitle: 'false'
     },
     {
         id: 1,
         name: 'Videos',
-        subtitle: ''
+        subtitle: 'false'
     },
     {
         id: 2,
         name: 'New Arrivals',
-        subtitle: ''
+        subtitle: 'false'
     },
     {
         id: 3,
         name: 'Care Sheets',
-        subtitle: 'Mantises',
+        subtitle: ['Mantises', 'Spiders', 'Plants']
     },
     {
         id: 4,
         name: 'Praying Mantises',
-        subtitle:''
+        subtitle:'false'
     },
     {
         id: 5,
@@ -47,17 +47,17 @@ export const HEADERS = [
     {
         id: 9,
         name: 'Shipping Supplies',
-        subtitle: ''
+        subtitle: 'false'
     },
     {
         id: 10,
         name: 'Spiders',
-        subtitle: ''
+        subtitle: 'false'
     },
     {
         id: 11,
         name: 'Contact Us',
-        subtitle: ''
+        subtitle: 'false'
     }
 
 ]
