@@ -5,7 +5,7 @@ function RenderNav( {header}) {
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
 
-    if(header.subtitle === 'false'){
+    if(header.subtitle === 0){
         return (
             <Card className="rounded-0">
                 <CardHeader className="border-bottom-0">{header.name}</CardHeader>
@@ -16,13 +16,19 @@ function RenderNav( {header}) {
             <Card className="rounded-0">
                 <CardHeader btn onClick={toggle} className="border-bottom-0">{header.name}</CardHeader>
                 <Collapse isOpen={isOpen}>
-                    <CardBody className="pt-2 pb-2">{header.subtitle}</CardBody>
+                        {header.subtitles.map(subtitle =>{
+                            return (
+                                <CardBody className="pt-2 pb-2" key={subtitle.id}>
+                                    {subtitle.name}
+                                </CardBody>
+                            );
+                        })}
                 </Collapse>
             </Card>
         );
-
     }
 }
+
 
 function Sidebar(props) {
     const header = props.headers.map(header => {
@@ -42,4 +48,5 @@ function Sidebar(props) {
 
 export default Sidebar;
 
-//NOTE: This is not done correctly; need to write a function for toggling and determining state
+//NOTE:
+//want to do a hover and mouseout event for clicking and hovering over navbar headers

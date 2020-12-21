@@ -2,62 +2,185 @@ export const HEADERS = [
     {
         id: 0,
         name: 'Home',
-        subtitle: 'false'
+        subtitles: []
     },
     {
         id: 1,
         name: 'Videos',
-        subtitle: 'false'
+        subtitles: []
     },
     {
         id: 2,
         name: 'New Arrivals',
-        subtitle: 'false'
+        subtitles: []
     },
     {
         id: 3,
         name: 'Care Sheets',
-        subtitle: ['Mantises', 'Spiders', 'Plants']
+        subtitles: [
+            {
+                id: 0,
+                name: 'Mantis'
+            },
+            {
+                id: 1,
+                name: 'Ootheca and Nymphs'
+
+            },
+            {
+                id: 2,
+                name: 'Feeder Insects'
+            },
+            {
+                id: 3,
+                name: 'Live Plants'
+            }
+        ]
     },
     {
         id: 4,
         name: 'Praying Mantises',
-        subtitle:'false'
+        subtitles: [
+            {
+                id: 0,
+                name: 'Live Mantises'
+            },
+            {
+                id: 1,
+                name: 'Live Ootheca'
+
+            },
+            {
+                id: 2,
+                name: 'Dried Ootheca'
+            },
+            {
+                id: 3,
+                name: 'Dead Mantises'
+            }
+        ]
     },
     {
         id: 5,
         name: 'Feeder Insects',
-        subtitle: 'Mealworms'
+        subtitles: [
+            {
+                id: 0,
+                name: 'Fruit Flies'
+            },
+            {
+                id: 1,
+                name: 'Bottle Flies '
+
+            },
+            {
+                id: 2,
+                name: 'Stable Flies'
+            },
+            {
+                id: 3,
+                name: 'Springtails'
+            },
+            {
+                id: 4,
+                name: 'Mealworms'
+            },
+            {
+                id: 5,
+                name: 'Waxworms'
+            }
+        ]
     },
     {
         id: 6,
         name: 'Starter Kits',
-        subtitle: 'Large Kit'
+        subtitles: [
+            {
+                id: 0,
+                name: 'Large Kit'
+            },
+            {
+                id: 1,
+                name: 'Medium Kit'
+            },
+            {
+                id: 2,
+                name: 'Small Kit'
+            }
+        ]
     },
     {
         id: 7,
         name: 'Accessories',
-        subtitle: 'Plants'
+        subtitles: [
+            {
+                id: 0,
+                name: 'Habitat'
+            },
+            {
+                id: 1,
+                name: 'Tools'
+            }
+        ]
     },
     {
         id: 8,
         name: 'Gift Shop',
-        subtitle: 'Jewelry'
+        subtitles: [
+            {
+                id: 0,
+                name: 'Jewelry'
+            },
+            {
+                id: 1,
+                name: 'Decals'
+            },
+            {
+                id: 2,
+                name: 'Patches'
+            },
+            {
+                id: 3,
+                name: 'Puzzles'
+            },
+            {
+                id: 4,
+                name: 'Books'
+            }
+        ]
     },
     {
         id: 9,
         name: 'Shipping Supplies',
-        subtitle: 'false'
+        subtitles: [
+            {
+                id: 0,
+                name: "Boxes"
+            },
+            {
+                id: 1,
+                name: "Heat Packs"
+            },
+            {
+                id: 2,
+                name: "Tape"
+            }
+        ]
     },
     {
         id: 10,
         name: 'Spiders',
-        subtitle: 'false'
+        subtitles: []
     },
     {
         id: 11,
         name: 'Contact Us',
-        subtitle: 'false'
+        subtitles: []
+    },
+    {
+        id: 12,
+        name: 'Shipping and Site Policy',
+        subtitles: []
     }
 
 ]
