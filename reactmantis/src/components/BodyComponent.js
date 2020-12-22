@@ -1,15 +1,49 @@
-import React from 'react';
-import { Card, CardText, CardSubtitle, CardBody, CardImg, Col, Row } from 'reactstrap';
+import React, {useState} from 'react';
+import { Card, CardText, CardSubtitle, CardBody, CardImg, Col, Row,
+         Modal, ModalHeader, ModalBody, ModalFooter, Button } from 'reactstrap';
 
 function RenderCard( {mantis} ) {
+    const [isOpen, setIsOpen] = useState(false);
+    const toggle = () => setIsOpen(!isOpen);
+
     return (
-        <Card className="h-100 rounded-0">
-            <CardImg src={mantis.image} className="mantis-image" alt={mantis.name}/>
-            <CardBody>
-                <CardSubtitle className="mantis-name">{mantis.name}</CardSubtitle>
-                <CardText className="mantis-price">${mantis.price}</CardText>
-            </CardBody>
-        </Card>
+        <React.Fragment>
+            <Card className="h-100 rounded-0">
+                <CardImg src={mantis.image} className="mantis-image" alt={mantis.name} onClick={toggle}/>
+                <CardBody>
+                    <CardSubtitle className="mantis-name">{mantis.name}</CardSubtitle>
+                    <CardText className="mantis-price">${mantis.price}</CardText>
+                </CardBody>
+            </Card>
+
+            <Modal centered isOpen={isOpen} toggle={toggle} >
+                <ModalHeader toggle={toggle} className="product-header"><h1>Product Preview</h1></ModalHeader>
+                <ModalBody>
+                    <Row>
+                        <Col xs={5} sm={4}>
+                            <CardImg className="img-thumbnail" src={mantis.image} alt={mantis.name}>
+                            </CardImg>
+                        </Col>
+                        <Col sm={7}>
+                            <Col>
+                                <Row className="product-name">
+                                    {mantis.name}
+                                </Row>
+                                <Row className="product-price pb-2">
+                                    ${mantis.price}
+                                </Row>
+                                <Row className="product-description pb-2">
+                                {mantis.description}
+                                </Row>
+                            </Col>
+                        </Col>
+                    </Row>
+                </ModalBody>
+                <ModalFooter>
+                        <Button className="p-2 rounded-0 product-button">View Product</Button>
+                </ModalFooter>
+            </Modal>
+        </React.Fragment>
     );
 }
 
@@ -53,3 +87,7 @@ function Body(props) {
 }
 
 export default Body;
+
+//TODO:
+//fix button behavior
+//add hover and quickview button so one can open the modal

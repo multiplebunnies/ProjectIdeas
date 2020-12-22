@@ -1,3 +1,5 @@
+@import "variables";
+
 .mantis-image {
     padding: 10px 19px 0px 19px;
 }
@@ -22,11 +24,25 @@
     }
 }
 
-//check what is going on...
-// .the-top {
-//     border: 1px solid red;
-// }
+//product modal styles--------------------------------------------------
+.product-header{
+    background-color: $bright-green;
+}
 
-// .the-row {
-//     border: 1px solid red;
-// }
+.product-name {
+    font-weight: bold;
+}
+
+.product-description {
+    font-size: .9em;
+}
+
+.product-button{
+    background: $bright-green;
+    border: none;
+    box-shadow:none !important;
+}
+
+.product-button:hover {
+    background: $almost-black;
+}

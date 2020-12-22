@@ -20,7 +20,7 @@ export const HEADERS = [
         subtitles: [
             {
                 id: 0,
-                name: 'Mantis'
+                name: 'Adult Mantis'
             },
             {
                 id: 1,

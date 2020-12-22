@@ -5,6 +5,14 @@ function RenderNav( {header}) {
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
 
+    // function changeBackground(e) {
+    //     e.target.style.background = 'gray';
+    // }
+
+    // function changeBack(e) {
+    //     e.target.style.background = '#f7f7f7';
+    // }
+
     if(header.subtitle === 0){
         return (
             <Card className="rounded-0">
@@ -14,7 +22,9 @@ function RenderNav( {header}) {
     } else {
         return (
             <Card className="rounded-0">
-                <CardHeader btn onClick={toggle} className="border-bottom-0">{header.name}</CardHeader>
+                <CardHeader btn className="border-bottom-0 rounded-0" onClick={toggle}>
+                    {header.name} <i class="fa fa-angle-down float-right"></i>
+                </CardHeader>
                 <Collapse isOpen={isOpen}>
                         {header.subtitles.map(subtitle =>{
                             return (
@@ -28,7 +38,6 @@ function RenderNav( {header}) {
         );
     }
 }
-
 
 function Sidebar(props) {
     const header = props.headers.map(header => {
@@ -49,4 +58,5 @@ function Sidebar(props) {
 export default Sidebar;
 
 //NOTE:
-//want to do a hover and mouseout event for clicking and hovering over navbar headers
+//rewrite so that event listners and hooks are added to make sidebar nav work properly
+//why does the down arrow appear on all results, even when it is in the else part of the statement?
