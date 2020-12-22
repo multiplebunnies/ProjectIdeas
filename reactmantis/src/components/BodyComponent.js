@@ -6,6 +6,15 @@ function RenderCard( {mantis} ) {
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
 
+    function MouseOver(event) {
+        event.target.style.background = '#59916d';
+        event.target.style.opacity = ".5";
+    }
+    function MouseOut(event){
+        event.target.style.background="";
+        event.target.style.opacity = "";
+    }
+
     return (
         <React.Fragment>
             <Card className="h-100 rounded-0">
@@ -17,12 +26,15 @@ function RenderCard( {mantis} ) {
             </Card>
 
             <Modal centered isOpen={isOpen} toggle={toggle} >
-                <ModalHeader toggle={toggle} className="product-header"><h1>Product Preview</h1></ModalHeader>
+                <ModalHeader toggle={toggle} className="product-header pb-0"><h1>Product Preview</h1></ModalHeader>
                 <ModalBody>
                     <Row>
                         <Col xs={5} sm={4}>
-                            <CardImg className="img-thumbnail" src={mantis.image} alt={mantis.name}>
-                            </CardImg>
+                            <div className="img-container">
+                                <CardImg className="img-thumbnail" onMouseOver={MouseOver} onMouseOut={MouseOut}
+                                    src={mantis.image} alt={mantis.name}>
+                                </CardImg>
+                            </div>
                         </Col>
                         <Col sm={7}>
                             <Col>
