@@ -15,7 +15,7 @@
 .the-col {
     border: 1px solid black;
 }
-//media query so that mentises is slightly to right on smaller screens
+//media query so that Mantises is slightly to right on smaller screens
 @media only screen and (max-width: 992px){
 .title-container {
         position: relative;
@@ -40,9 +40,5 @@
 .product-button{
     background: $bright-green;
     border: none;
-    box-shadow:none !important;
-}
-
-.product-button:hover {
-    background: $almost-black;
+    box-shadow: none !important;
 }
