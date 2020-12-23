@@ -182,5 +182,4 @@ export const HEADERS = [
         name: 'Shipping and Site Policy',
         subtitles: []
     }
-
 ]

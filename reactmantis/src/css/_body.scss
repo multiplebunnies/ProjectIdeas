@@ -12,9 +12,6 @@
     font-size: 13px;
 }
 
-.the-col {
-    border: 1px solid black;
-}
 //media query so that Mantises is slightly to right on smaller screens
 @media only screen and (max-width: 992px){
 .title-container {
@@ -38,6 +35,7 @@
 }
 
 .product-button{
+    font-family: "Raleway", sans-serif;
     background: $bright-green;
     border: none;
     box-shadow: none !important;

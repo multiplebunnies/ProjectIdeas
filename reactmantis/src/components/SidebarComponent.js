@@ -5,24 +5,25 @@ function RenderNav( {header} ) {
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
 
-    if (header.subtitle === 0) {
+    if (header.subtitles.length === 0) {
         return (
             <Card className="rounded-0">
                 <Button className="navbar-buttons btn-light w-100 rounded-0 p-2">
-                    {header.name} <i class="fa fa-angle-down float-right"></i>
+                    {header.name}
                 </Button>
             </Card>
         );
     } else {
         return (
             <Card className="rounded-0">
-                <Button onClick={toggle} className="navbar-buttons btn-light w-100 rounded-0 p-2">
+                <Button onClick={toggle} className="navbar-buttons btn-light rounded-0 p-2" aria-labelledby={header.name}>
                     {header.name} <i class="fa fa-angle-down float-right"></i>
                 </Button>
                 <Collapse isOpen={isOpen}>
                     {header.subtitles.map(subtitle => {
                         return (
-                            <Button className="navbar-buttons subtitle-buttons btn-light w-100 rounded-0 p-2" key={subtitle.id}>
+                            <Button block key={subtitle.id} aria-labelledby={subtitle.name} 
+                                    className="navbar-buttons subtitle-buttons btn-light rounded-0 p-2 mt-0">
                                 {subtitle.name}
                             </Button>
                         );

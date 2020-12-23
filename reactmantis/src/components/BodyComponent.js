@@ -25,16 +25,14 @@ function RenderCard( {mantis} ) {
                 </CardBody>
             </Card>
 
-            <Modal centered isOpen={isOpen} toggle={toggle}>
+            <Modal centered isOpen={isOpen} toggle={toggle} aria-label="Cancel">
                 <ModalHeader toggle={toggle} className="product-header pb-0"><h1>Product Preview</h1></ModalHeader>
                 <ModalBody>
                     <Row>
                         <Col xs={5} sm={4}>
-                            <div className="img-container">
-                                <CardImg className="img-thumbnail" onMouseOver={MouseOver} onMouseOut={MouseOut}
-                                    src={mantis.image} alt={mantis.name}>
-                                </CardImg>
-                            </div>
+                            <CardImg className="img-thumbnail" onMouseOver={MouseOver} onMouseOut={MouseOut}
+                                src={mantis.image} alt={mantis.name}>
+                            </CardImg>
                         </Col>
                         <Col sm={7}>
                             <Col>
@@ -52,7 +50,7 @@ function RenderCard( {mantis} ) {
                     </Row>
                 </ModalBody>
                 <ModalFooter>
-                        <Button color="success" className="p-2 rounded-0 product-button">View Product</Button>
+                        <Button color="success" className="p-2 rounded-0 product-button" aria-label="View Product">View Product</Button>
                 </ModalFooter>
             </Modal>
         </React.Fragment>
