@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import Logo from '../shared/mantis_full.png';
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink,
-        Modal, ModalHeader, ModalBody } from 'reactstrap';           //^ will delete this later when doing react router dom
-//import { NavLink } from 'react-router-dom';                         
-
-//TODO: will eventually add react-router to this page
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem,
+        Modal, ModalHeader, ModalBody } from 'reactstrap';
+import { NavLink } from 'react-router-dom';                         
 
 class Header extends Component {
     constructor(props) {
@@ -48,43 +46,43 @@ class Header extends Component {
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav className="mr-auto" navbar>
                                 <NavItem>
-                                    <NavLink href="/">Home</NavLink>
+                                    <NavLink className="nav-link" to="/home">Home</NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink href="/videos/">Videos</NavLink>
+                                    <NavLink className="nav-link" to="/videos">Videos</NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink href="/newarrivals/">New Arrivals</NavLink>
+                                    <NavLink className="nav-link" to="/newarrivals">New Arrivals</NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="d-lg-none" href="/caresheets/">Care Sheets</NavLink>
+                                    <NavLink className="d-lg-none nav-link" to="/home">Care Sheets</NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink href="/mantises/">Mantises</NavLink>
+                                    <NavLink className="nav-link" to="/mantises">Mantises</NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="d-lg-none" href="/spiders/">Spiders</NavLink>
+                                    <NavLink className="d-lg-none nav-link " to="/home">Spiders</NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="d-lg-none" href="/feederinsects/">Feeder Insects</NavLink>
+                                    <NavLink className="d-lg-none nav-link" to="/home">Feeder Insects</NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="d-lg-none" href="/starterkits/">Starter Kits</NavLink>
+                                    <NavLink className="d-lg-none nav-link" to="/home">Starter Kits</NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink href="/accessories/">Accessories</NavLink>
+                                    <NavLink className="nav-link" to="/accessories">Accessories</NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="d-lg-none" href="/giftshop/">Gift Shop</NavLink>
+                                    <NavLink className="d-lg-none nav-link" to="/home">Gift Shop</NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="d-lg-none" href="/shoppingsupplies/">Shipping Supplies</NavLink>
+                                    <NavLink className="d-lg-none nav-link" to="/home">Shipping Supplies</NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="d-lg-none" href="/contactus/">Contact Us</NavLink>
+                                    <NavLink className="d-lg-none nav-link" to="/home">Contact Us</NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="d-lg-none" href="/policies/">Shopping and Site Policy</NavLink>
+                                    <NavLink className="d-lg-none nav-link" to="/home">Shopping and Site Policy</NavLink>
                                 </NavItem>
                             </Nav>
                         </Collapse>
