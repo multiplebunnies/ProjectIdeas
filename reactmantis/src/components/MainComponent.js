@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Col, Row} from 'reactstrap';
+
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
 import Mantises from './MantisesComponent';
@@ -7,7 +9,8 @@ import Home from './HomeComponent';
 import Videos from './VideosComponent';
 import NewArrivals from './NewArrivalsComponent';
 import Accessories from './AccessoriesComponent';
-import { Col, Row} from 'reactstrap';
+import MantisInfo from './MantisInfoComponent';
+
 import { MANTISES } from '../shared/mantises';
 import { HEADERS } from '../shared/sidebarnav';
 import { Switch, Route, Redirect } from 'react-router-dom';
@@ -22,29 +25,17 @@ class Main extends Component {
     }
 
     render () {
-        const HomePage = () => {
+        const HomePage = () => { return ( <Home /> ); };
+        const VideosPage = () => { return ( <Videos /> ); };
+        const NewArrivalsPage = () => { return ( <NewArrivals /> ); };
+        const AccessoriesPage = () => { return ( <Accessories /> ); };
+        const MantisWithId = ( {match} ) => {
             return (
-                <Home />
+                <MantisInfo 
+                    mantis={this.state.mantises.filter(mantis => mantis.id === +match.params.mantisId)[0]}
+                />
             );
         };
-
-        const VideosPage = () => {
-            return (
-                <Videos />
-            )
-        }
-
-        const NewArrivalsPage = () => {
-            return (
-                <NewArrivals />
-            )
-        }
-
-        const AccessoriesPage = () => {
-            return (
-                <Accessories />
-            )
-        }
 
         return (
             <React.Fragment>
@@ -58,6 +49,8 @@ class Main extends Component {
                         <Switch>
                             <Route path='/home' component={HomePage}/>
                             <Route exact path='/mantises' render={() => <Mantises mantises={this.state.mantises} />} />
+
+                            <Route path='/mantises/:mantisId' component={MantisWithId} />
 
                             <Route path='/videos' component={VideosPage}/>
                             <Route path='/newarrivals' component={NewArrivalsPage}/>
@@ -75,3 +68,5 @@ class Main extends Component {
 }
 
 export default Main;
+
+//NOTE: use end of week 3 pages for current task

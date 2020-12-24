@@ -1,26 +1,30 @@
 import React, {useState} from 'react';
 import { Card, CardText, CardSubtitle, CardBody, CardImg, Col, Row,
          Modal, ModalHeader, ModalBody, ModalFooter, Button } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 function RenderCard( {mantis} ) {
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
 
-    function MouseOver(event) {
-        event.target.style.background = '#59916d';
-        event.target.style.opacity = ".5";
-    }
-    function MouseOut(event){
-        event.target.style.background="";
-        event.target.style.opacity = "";
-    }
+    //eventually want a overlay on the product picture showing "quickview"
+    // function MouseOver(event) {
+    //     event.target.style.background = '#59916d';
+    //     event.target.style.opacity = ".5";
+    // }
+    // function MouseOut(event){
+    //     event.target.style.background="";
+    //     event.target.style.opacity = "";
+    // }
 
     return (
         <React.Fragment>
             <Card className="h-100 rounded-0">
                 <CardImg src={mantis.image} className="mantis-image" alt={mantis.name} onClick={toggle}/>
                 <CardBody>
-                    <CardSubtitle className="mantis-name">{mantis.name}</CardSubtitle>
+                    <Link to={`mantises/${mantis.id}`}>
+                        <CardSubtitle className="mantis-name">{mantis.name}</CardSubtitle>
+                    </Link>
                     <CardText className="mantis-price">${mantis.price}</CardText>
                 </CardBody>
             </Card>
@@ -30,7 +34,7 @@ function RenderCard( {mantis} ) {
                 <ModalBody>
                     <Row>
                         <Col xs={5} sm={4}>
-                            <CardImg className="img-thumbnail" onMouseOver={MouseOver} onMouseOut={MouseOut}
+                            <CardImg className="img-thumbnail"
                                 src={mantis.image} alt={mantis.name}>
                             </CardImg>
                         </Col>
@@ -50,7 +54,9 @@ function RenderCard( {mantis} ) {
                     </Row>
                 </ModalBody>
                 <ModalFooter>
-                        <Button color="success" className="p-2 rounded-0 product-button" aria-label="View Product">View Product</Button>
+                        <Link to={`mantises/${mantis.id}`}>
+                            <Button color="success" className="p-2 rounded-0 product-button" aria-label="View Product">View Product</Button>
+                        </Link>
                 </ModalFooter>
             </Modal>
         </React.Fragment>
