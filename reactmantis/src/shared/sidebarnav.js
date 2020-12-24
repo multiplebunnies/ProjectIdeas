@@ -2,17 +2,20 @@ export const HEADERS = [
     {
         id: 0,
         name: 'Home',
-        subtitles: []
+        subtitles: [],
+        url: 'home'
     },
     {
         id: 1,
         name: 'Videos',
-        subtitles: []
+        subtitles: [],
+        url: 'videos'
     },
     {
         id: 2,
         name: 'New Arrivals',
-        subtitles: []
+        subtitles: [],
+        url: 'newarrivals'
     },
     {
         id: 3,
@@ -20,20 +23,24 @@ export const HEADERS = [
         subtitles: [
             {
                 id: 0,
-                name: 'Adult Mantis'
+                name: 'Adult Mantis',
+                url: 'adultmantis'
             },
             {
                 id: 1,
-                name: 'Ootheca and Nymphs'
+                name: 'Ootheca and Nymphs',
+                url: 'oothecanymphs'
 
             },
             {
                 id: 2,
-                name: 'Feeder Insects'
+                name: 'Feeder Insects',
+                url: 'feederinsects'
             },
             {
                 id: 3,
-                name: 'Live Plants'
+                name: 'Live Plants',
+                url: 'liveplants'
             }
         ]
     },
@@ -43,20 +50,24 @@ export const HEADERS = [
         subtitles: [
             {
                 id: 0,
-                name: 'Live Mantises'
+                name: 'Live Mantises',
+                url: 'livemantises'
             },
             {
                 id: 1,
-                name: 'Live Ootheca'
+                name: 'Live Ootheca',
+                url: 'liveootheca'
 
             },
             {
                 id: 2,
-                name: 'Dried Ootheca'
+                name: 'Dried Ootheca',
+                url: 'driedootheca'
             },
             {
                 id: 3,
-                name: 'Dead Mantises'
+                name: 'Dead Mantises',
+                url: 'deadmantises'
             }
         ]
     },
@@ -66,28 +77,34 @@ export const HEADERS = [
         subtitles: [
             {
                 id: 0,
-                name: 'Fruit Flies'
+                name: 'Fruit Flies',
+                url: 'fruitflies'
             },
             {
                 id: 1,
-                name: 'Bottle Flies '
+                name: 'Bottle Flies',
+                url: 'bottleflies'
 
             },
             {
                 id: 2,
-                name: 'Stable Flies'
+                name: 'Stable Flies',
+                url: 'stableflies'
             },
             {
                 id: 3,
-                name: 'Springtails'
+                name: 'Springtails',
+                url: 'springtails'
             },
             {
                 id: 4,
-                name: 'Mealworms'
+                name: 'Mealworms',
+                url: 'mealworms'
             },
             {
                 id: 5,
-                name: 'Waxworms'
+                name: 'Waxworms',
+                url: 'waxworms'
             }
         ]
     },
@@ -97,15 +114,18 @@ export const HEADERS = [
         subtitles: [
             {
                 id: 0,
-                name: 'Large Kit'
+                name: 'Large Kit',
+                url: 'largekit'
             },
             {
                 id: 1,
-                name: 'Medium Kit'
+                name: 'Medium Kit',
+                url: 'mediumkit'
             },
             {
                 id: 2,
-                name: 'Small Kit'
+                name: 'Small Kit',
+                url: 'smallkit'
             }
         ]
     },
@@ -115,11 +135,13 @@ export const HEADERS = [
         subtitles: [
             {
                 id: 0,
-                name: 'Habitat'
+                name: 'Habitat',
+                url: 'habitat'
             },
             {
                 id: 1,
-                name: 'Tools'
+                name: 'Tools',
+                url: 'tools'
             }
         ]
     },
@@ -129,23 +151,28 @@ export const HEADERS = [
         subtitles: [
             {
                 id: 0,
-                name: 'Jewelry'
+                name: 'Jewelry',
+                url: 'jewelry'
             },
             {
                 id: 1,
-                name: 'Decals'
+                name: 'Decals',
+                url: 'decals'
             },
             {
                 id: 2,
-                name: 'Patches'
+                name: 'Patches',
+                url: 'patches'
             },
             {
                 id: 3,
-                name: 'Puzzles'
+                name: 'Puzzles',
+                url: 'puzzles'
             },
             {
                 id: 4,
-                name: 'Books'
+                name: 'Books',
+                url: 'books'
             }
         ]
     },
@@ -155,31 +182,37 @@ export const HEADERS = [
         subtitles: [
             {
                 id: 0,
-                name: "Boxes"
+                name: 'Boxes',
+                url: 'boxes'
             },
             {
                 id: 1,
-                name: "Heat Packs"
+                name: 'Heat Packs',
+                url: 'heatpacks'
             },
             {
                 id: 2,
-                name: "Tape"
+                name: 'Tape',
+                url: 'Tape'
             }
         ]
     },
     {
         id: 10,
         name: 'Spiders',
-        subtitles: []
+        subtitles: [],
+        url: 'spiders'
     },
     {
         id: 11,
         name: 'Contact Us',
-        subtitles: []
+        subtitles: [],
+        url: 'contactus'
     },
     {
         id: 12,
         name: 'Shipping and Site Policy',
-        subtitles: []
+        subtitles: [],
+        url: 'shippingsitepolicy'
     }
 ]

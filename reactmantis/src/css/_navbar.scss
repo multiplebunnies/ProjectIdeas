@@ -12,10 +12,10 @@
 .subtitle-buttons {
     background: white;
     border-bottom: 1px solid #d3d3d3;
-    &:last-child { 
-        border-bottom: none;
-    }
+    border-left: 2px solid #d3d3d3;
+    border-right: 2px solid #d3d3d3;
 }
+
 
 //will need to figure out how to add scss mixins for react projects--------
 //TEST

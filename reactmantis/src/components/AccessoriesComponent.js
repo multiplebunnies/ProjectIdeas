@@ -1,11 +1,16 @@
 import React from 'react';
-import { Card, CardText } from 'reactstrap';
+import { Col } from 'reactstrap';
 
 function Accessories(props) {
     return (
-        <Card>
-            <CardText>This is a NewArrivals stand-in page</CardText>
-        </Card>
+        <React.Fragment>
+            <Col className="mt-2 pl-0 title-container">
+                <h1>Accessories</h1>
+            </Col>
+            <Col className="pl-0 title-container">
+                This is a stand-in for the Accessories Page.
+            </Col>
+        </React.Fragment>
     );
 }
 

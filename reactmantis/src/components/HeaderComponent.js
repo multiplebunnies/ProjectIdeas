@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Logo from '../shared/mantis_full.png';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem,
-        Modal, ModalHeader, ModalBody } from 'reactstrap';
+        Modal, ModalHeader, ModalBody, ModalFooter, Button, Col } from 'reactstrap';
 import { NavLink } from 'react-router-dom';                         
 
 class Header extends Component {
@@ -29,16 +29,19 @@ class Header extends Component {
         });
     }
 
-
     render () {
         return (
             <React.Fragment>
                 <Navbar className="header-nav" expand="lg" dark>
                     <div className="container-fluid">
-                        <span className="logo d-none d-lg-block">
-                            <a href="/"><img src={Logo} height="100" width="105" alt="Logo"/></a>
-                        </span>
-                        <NavbarBrand href="/" className="website-name"><h1>Mantis Place</h1></NavbarBrand>
+                        <NavLink className="nav-link m-0 p-0" to="/home">
+                            <span className="logo d-none d-lg-block">
+                                <a href="/"><img src={Logo} height="100" width="105" alt="Logo"/></a>
+                            </span>
+                        </NavLink>
+                        <NavLink className="nav-link" to="/home">
+                            <NavbarBrand href="/" className="website-name"><h1>Mantis Place</h1></NavbarBrand>
+                        </NavLink>
                         <span className="btn shopping-bag" onClick={this.toggleModal}>
                             <i className="fa fa-shopping-bag fa-lg" href="/"></i>
                         </span>
@@ -89,8 +92,17 @@ class Header extends Component {
                     </div>
                 </Navbar>
                 <Modal centered isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
-                    <ModalHeader toggle={this.toggleModal}>Shopping Cart</ModalHeader>
+                    <ModalHeader toggle={this.toggleModal} className="product-header pb-0"><h1>Shopping Cart</h1></ModalHeader>
                     <ModalBody>More text here later.</ModalBody>
+                    <ModalFooter>
+                        <Col className="p-0 text-left">
+                            <Button color="success" className="p-2 rounded-0 product-button text-left" aria-label="Checkout">Checkout</Button>
+                        </Col>
+                         <Col className="p-0 text-right">
+                            <Button active color="success" className="p-2 rounded-0 product-button" aria-label="Shopping">Continue Shopping</Button>
+                         </Col>
+                    </ModalFooter>
+
                 </Modal>
             </React.Fragment>
         );
@@ -98,3 +110,5 @@ class Header extends Component {
 }
 
 export default Header;
+
+//NOTE: I chose to write this without useState for practice.

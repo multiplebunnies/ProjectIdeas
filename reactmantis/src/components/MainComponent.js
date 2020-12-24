@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
-import Body from './BodyComponent';
+import Mantises from './MantisesComponent';
 import Sidebar from './SidebarComponent';
 import Home from './HomeComponent';
 import Videos from './VideosComponent';
@@ -46,8 +46,6 @@ class Main extends Component {
             )
         }
 
-        
-
         return (
             <React.Fragment>
                 <Header />
@@ -59,7 +57,7 @@ class Main extends Component {
                     <Col>
                         <Switch>
                             <Route path='/home' component={HomePage}/>
-                            <Route exact path='/mantises' render={() => <Body mantises={this.state.mantises} />} />
+                            <Route exact path='/mantises' render={() => <Mantises mantises={this.state.mantises} />} />
 
                             <Route path='/videos' component={VideosPage}/>
                             <Route path='/newarrivals' component={NewArrivalsPage}/>

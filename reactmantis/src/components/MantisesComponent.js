@@ -57,7 +57,7 @@ function RenderCard( {mantis} ) {
     );
 }
 
-function Body(props) {
+function Mantises(props) {
     const mantis = props.mantises.map(mantis => {
         return (
             <div key={mantis.id}>
@@ -96,7 +96,7 @@ function Body(props) {
     );
 }
 
-export default Body;
+export default Mantises;
 
 //TODO:
 //fix button behavior

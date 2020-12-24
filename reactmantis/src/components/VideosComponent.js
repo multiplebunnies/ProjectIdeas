@@ -1,11 +1,16 @@
 import React from 'react';
-import { Card, CardText } from 'reactstrap';
+import { Col } from 'reactstrap';
 
 function Videos(props) {
     return (
-        <Card>
-            <CardText>This is a Videos stand-in page</CardText>
-        </Card>
+        <React.Fragment>
+            <Col className="mt-2 pl-0 title-container">
+                <h1>Videos</h1>
+            </Col>
+            <Col className="pl-0 title-container">
+                This is a stand-in for the Videos Page.
+            </Col>
+        </React.Fragment>
     );
 }
 
