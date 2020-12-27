@@ -20,7 +20,7 @@ class Main extends Component {
         super(props);
         this.state = {
             mantises: MANTISES,
-            headers: HEADERS
+            headers: HEADERS,
         };
     }
 
