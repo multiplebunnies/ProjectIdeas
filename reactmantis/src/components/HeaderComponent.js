@@ -46,7 +46,7 @@ class Header extends Component {
                             <i className="fa fa-shopping-bag fa-lg" href="/"></i>
                         </span>
                         <NavbarToggler className="toggler order-first align-items-center" onClick={this.toggleNav} />
-                        <Collapse isOpen={this.state.isNavOpen} onClick={this.toggleNav} navbar>
+                        <Collapse onClick={this.toggleNav} navbar>
                             <Nav className="mr-auto" navbar>
                                 <NavItem>
                                     <NavLink className="nav-link" to="/home">Home</NavLink>
@@ -99,7 +99,7 @@ class Header extends Component {
                             <Button color="success" className="p-2 rounded-0 product-button text-left" aria-label="Checkout">Checkout</Button>
                         </Col>
                          <Col className="p-0 text-right">
-                            <Button active color="success" className="p-2 rounded-0 product-button" aria-label="Shopping">Continue Shopping</Button>
+                            <Button active onClick={this.toggleModal} color="success" className="p-2 rounded-0 product-button" aria-label="Shopping">Continue Shopping</Button>
                          </Col>
                     </ModalFooter>
 

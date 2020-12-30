@@ -2,7 +2,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Project is now being reworked for react and reactstrap.
 
 ## Done (Dec 27, 2020)
-* Navbar closes when you click a link now :)
+* Shopping Modal closes when you click "Continue Shopping"
+* Fixed "flickering" issue due to extra "isOpen" in navbar
 
 ## To Fix
 * Re-design of the page for each individual mantis
