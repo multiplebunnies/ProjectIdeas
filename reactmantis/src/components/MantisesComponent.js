@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { Card, CardText, CardSubtitle, CardBody, CardImg, Col, Row,
          Modal, ModalHeader, ModalBody, ModalFooter, Button } from 'reactstrap';
 import { Link } from 'react-router-dom';
@@ -6,16 +6,6 @@ import { Link } from 'react-router-dom';
 function RenderCard( {mantis} ) {
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
-
-    //eventually want a overlay on the product picture showing "quickview"
-    // function MouseOver(event) {
-    //     event.target.style.background = '#59916d';
-    //     event.target.style.opacity = ".5";
-    // }
-    // function MouseOut(event){
-    //     event.target.style.background="";
-    //     event.target.style.opacity = "";
-    // }
 
     return (
         <React.Fragment>
@@ -63,6 +53,30 @@ function RenderCard( {mantis} ) {
     );
 }
 
+//react hooks with dropdown----------------------------
+//logically:
+//default state of dropdown: featured
+//when click "nymphs" the data should show mantis nymphs (new state)
+
+//code-wise:
+//filter the data by "nymph" etc. in another function
+//need useState to check state of dropdown
+//event handler for when state changed and recorded
+// function RenderNymphs( {mantis} ) {
+//     const nymphsOnly = mantis.filter(mantis => mantis.age === "Nymph")
+//     return (
+//         <>
+//             <Col>
+//                 {nymphsOnly}
+//             </Col>
+//             <Col>
+//                 Hello!
+//             </Col>
+//         </>
+//     )
+// }
+
+
 function Mantises(props) {
     const mantis = props.mantises.map(mantis => {
         return (
@@ -103,7 +117,3 @@ function Mantises(props) {
 }
 
 export default Mantises;
-
-//TODO:
-//fix button behavior
-//add hover and quickview button so one can open the modal

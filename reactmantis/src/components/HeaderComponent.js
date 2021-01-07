@@ -46,7 +46,7 @@ class Header extends Component {
                             <i className="fa fa-shopping-bag fa-lg" href="/"></i>
                         </span>
                         <NavbarToggler className="toggler order-first align-items-center" onClick={this.toggleNav} />
-                        <Collapse onClick={this.toggleNav} navbar>
+                        <Collapse onClick={this.toggleNav} isOpen={this.state.isNavOpen} navbar> {/*must write so isOpen applies only to smaller breakpoint */}
                             <Nav className="mr-auto" navbar>
                                 <NavItem>
                                     <NavLink className="nav-link" to="/home">Home</NavLink>
